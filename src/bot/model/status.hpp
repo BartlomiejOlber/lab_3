@@ -5,9 +5,10 @@
  *      Author: bartlomiej
  */
 
-#ifndef STATUS_HPP_
-#define STATUS_HPP_
+#ifndef BOT_MODEL_STATUS_HPP_
+#define BOT_MODEL_STATUS_HPP_
 
+namespace model {
 
 enum class Status {
 
@@ -16,5 +17,6 @@ enum class Status {
 	NEUTRAL = 2
 };
 
+}//end namespace
 
-#endif /* STATUS_HPP_ */
+#endif /* BOT_MODEL_STATUS_HPP_ */

@@ -5,10 +5,13 @@
  *      Author: bartlomiej
  */
 
-#ifndef TROOP_HPP_
-#define TROOP_HPP_
+#ifndef BOT_MODEL_TROOP_HPP_
+#define BOT_MODEL_TROOP_HPP_
 
+#include <vector>
 #include "entity.hpp"
+
+namespace model {
 
 class Troop : public Entity {
 
@@ -16,11 +19,14 @@ class Troop : public Entity {
 
 public:
 	Troop( int quantity, Tier tier, int x, int y ) : quantity_( quantity ),
-		tier_( tier ), coord_x_( x ), coord_y_( y ){};
-	int get_quantity(){ return quantity_;}
+		tier_( tier ), coord_x_( x ), coord_y_( y ){}
+	int get_quantity() const { return quantity_; }
 	void kill( int quantity ){ quantity >= quantity_ ? quantity_ = 0 : quantity_ -= quantity; }
 	void vanish() : quantity_( 0 ){}
 };
 
+typedef std::vector<Troop> TroopContainer;
 
-#endif /* TROOP_HPP_ */
+}//end namespace
+
+#endif /* BOT_MODEL_TROOP_HPP_ */

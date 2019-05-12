@@ -5,8 +5,10 @@
  *      Author: bartlomiej
  */
 
-#ifndef TIER_HPP_
-#define TIER_HPP_
+#ifndef BOT_MODEL_TIER_HPP_
+#define BOT_MODEL_TIER_HPP_
+
+namespace model {
 
 enum class Tier{
 	LOW = 0,
@@ -14,5 +16,6 @@ enum class Tier{
 	HIGH = 2
 };
 
+}//end namespace
 
-#endif /* TIER_HPP_ */
+#endif /* BOT_MODEL_TIER_HPP_ */

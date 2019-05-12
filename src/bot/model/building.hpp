@@ -5,11 +5,14 @@
  *      Author: bartlomiej
  */
 
-#ifndef BUILDING_HPP_
-#define BUILDING_HPP_
+#ifndef BOT_MODEL_BUILDING_HPP_
+#define BOT_MODEL_BUILDING_HPP_
 
+#include <vector>
 #include "entity.hpp"
 #include "status.hpp"
+
+namespace model {
 
 class Building : public GameObject {
 
@@ -20,8 +23,13 @@ public:
 
 	Building( Tier tier, Status status, int x, int y ) : tier_( tier ), status_( status ), coord_x_( x ), coord_y_( y ){}
 	void take_control() : status_( Status::FRIEND ){}
+	Tier get_tier() const { return tier_;}
+	Status get_status() const { return status_; }
 
 };
 
+typedef std::vector<Building> BuildingContainer;
 
-#endif /* BUILDING_HPP_ */
+}//end namespace
+
+#endif /* BOT_MODEL_BUILDING_HPP_ */
