@@ -18,11 +18,11 @@ class Troop : public Entity {
 	int quantity_;
 
 public:
-	Troop( int quantity, Tier tier, int x, int y ) : quantity_( quantity ),
-		tier_( tier ), coord_x_( x ), coord_y_( y ){}
+	Troop( int quantity, Tier tier, int x, int y ) : Entity( tier, x, y ), quantity_( quantity ) {}
 	int get_quantity() const { return quantity_; }
+	void recruit( int quantity ){ quantity_ += quantity; }
 	void kill( int quantity ){ quantity >= quantity_ ? quantity_ = 0 : quantity_ -= quantity; }
-	void vanish() : quantity_( 0 ){}
+	void vanish(){ quantity_ = 0;}
 };
 
 typedef std::vector<Troop> TroopContainer;

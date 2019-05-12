@@ -20,8 +20,8 @@ class GuardedBuilding : public Building {
 public:
 
 	GuardedBuilding( Tier building_tier, Status status, int guards_num, Tier guards_tier, int x, int y ) :
-		tier_( building_tier), status_( status ), guards_( guards_num, guards_tier, x, y ), coord_x_( x ), coord_y_( y ){}
-	void take_control() : status_( Status::FRIEND ) { guards_.vanish(); }
+		Building( building_tier, status, x, y ), guards_( guards_num, guards_tier, x, y ) {}
+	void conquer(){  take_control(); guards_.vanish(); }
 	Tier get_guards_tier() const { return guards_.get_tier(); }
 	int get_guards_quantity() const { return guards_.get_quantity(); }
 

@@ -5,7 +5,7 @@
  *      Author: bartlomiej
  */
 
-#include "../brain.hpp"
+#include "brain.hpp"
 
 namespace brain {
 

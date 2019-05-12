@@ -21,8 +21,10 @@ class Building : public GameObject {
 
 public:
 
-	Building( Tier tier, Status status, int x, int y ) : tier_( tier ), status_( status ), coord_x_( x ), coord_y_( y ){}
-	void take_control() : status_( Status::FRIEND ){}
+	Building( Tier tier, Status status, int x, int y ) : GameObject(x, y), tier_( tier ), status_( status ){}
+	void take_control(){ status_ = Status::FRIEND; }
+	void set_status( Status status ){ status_ = status; }
+	void set_tier( Tier tier ){ tier_ = tier; }
 	Tier get_tier() const { return tier_;}
 	Status get_status() const { return status_; }
 

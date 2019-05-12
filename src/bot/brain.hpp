@@ -8,8 +8,8 @@
 #ifndef BOT_BRAIN_HPP_
 #define BOT_BRAIN_HPP_
 
-#include "../model/game_state.hpp"
-#include "../model/action.hpp"
+#include "model/game_state.hpp"
+#include "model/action.hpp"
 
 namespace brain {
 

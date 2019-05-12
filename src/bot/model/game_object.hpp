@@ -17,7 +17,7 @@ class GameObject {
 
 public:
 	GameObject( int x = 0, int y = 0 ) : coord_x_( x ), coord_y_( y ){};
-	void set_coordinates( int x, int y ) : coord_x_( x ), coord_y_( y ){};
+	void set_coordinates( int x, int y ){ coord_x_ = x; coord_y_ = y; };
 	int get_x() const { return coord_x_; }
 	int get_y() const { return coord_y_; }
 	virtual ~GameObject(){};

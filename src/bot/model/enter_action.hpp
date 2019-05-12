@@ -13,6 +13,10 @@
 
 namespace model {
 
+class EnterAction : public HeroAction {
+
+
+};
 
 }
 
