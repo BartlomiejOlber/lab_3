@@ -29,7 +29,7 @@ private:
 	void randomize_gold_( std::array<int,3>& gold_properties );
 	void randomize_troop_( std::array<int,4>& troop_properties );
 	void randomize_map_size_( std::pair<int, int>& map_size );
-	void randomize_map_objects_number_( const std::pair<int, int>& map_size, int objects_number );
+	void randomize_map_objects_number_( const std::pair<int, int>& map_size, int& objects_number );
 	void randomize_map_objects_types_( std::array<int,4>& object_types, int objects_number );
 
 };

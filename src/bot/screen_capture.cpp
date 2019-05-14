@@ -6,19 +6,57 @@
  */
 
 #include <random>
+#include <algorithm>
+#include "model/castle.hpp"
 #include "screen_capture.hpp"
+#include "model/status.hpp"
 
 namespace bot {
 
 void ScreenCapture::capture_screen( model::GameState& game_state )
 {
-
+	std::pair<int, int> map_size;
+	randomize_map_size_( map_size );
+	int objects_number;
+	randomize_map_objects_number_( map_size, objects_number );
+	std::vector<std::pair<int, int> > coordinates;
+	make_unique_coordinates_( coordinates, map_size, objects_number );
+	std::array<int,4> object_types;
+	randomize_map_objects_types_( object_types, objects_number );
+	std::array<int,11> castle_properties;
+	randomize_castle_( castle_properties );
+	auto it=coordinates.begin();
+	castle_properties[9] = it->first;
+	castle_properties[10] = it->second;
+	model::Castle my_castle( castle_properties, model::Status::FRIEND );
+	game_state.my_castle_ = my_castle;
+	randomize_castle_( castle_properties );
+	++it;
+	castle_properties[9] = it->first;
+	castle_properties[10] = it->second;
+	model::Castle enemy_castle( castle_properties, model::Status::ENEMY );
+	game_state.enemy_castle_ = enemy_castle;
 }
 
 void ScreenCapture::make_unique_coordinates_( std::vector<std::pair<int, int> >& coordinates,
 		const std::pair<int, int>& map_size,  int objects_number  )
 {
-
+	int width = map_size.first;
+	int height = map_size.second;
+	int coordinates_generated = 0;
+    std::random_device dev;
+    std::mt19937 rng(dev());
+	std::uniform_int_distribution<std::mt19937::result_type> coordinate_x(0,width);
+	std::uniform_int_distribution<std::mt19937::result_type> coordinate_y(0,height);
+	std::pair<int,int> tmp;
+    while( coordinates_generated < objects_number ){
+		tmp.first = coordinate_x(rng);
+		tmp.second = coordinate_y(rng);
+        if( !(std::find( coordinates.begin(), coordinates.end(), tmp) != coordinates.end() ) ) {
+        	coordinates.push_back( tmp );
+			++coordinates_generated;
+        }
+    }
 }
 
 void ScreenCapture::randomize_hero_( std::array<int,7>& hero_properties )
@@ -111,7 +149,7 @@ void ScreenCapture::randomize_map_size_( std::pair<int, int>& map_size )
     map_size.second = map_measurements(rng);
 }
 
-void ScreenCapture::randomize_map_objects_number_( const std::pair<int, int>& map_size, int objects_number )
+void ScreenCapture::randomize_map_objects_number_( const std::pair<int, int>& map_size, int& objects_number )
 {
 	int max = (map_size.first * map_size.second)/ 30;
 	int min = 100;

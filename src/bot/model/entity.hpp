@@ -21,7 +21,7 @@ public:
 	Entity( Tier tier, int x, int y ) : GameObject( x, y ), tier_( tier ){}
 	void set_tier( Tier tier ){ tier_ = tier; }
 	Tier get_tier() const { return tier_;}
-	virtual ~Entity() = 0;
+	virtual ~Entity(){};
 
 };
 

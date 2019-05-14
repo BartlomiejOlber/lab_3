@@ -22,8 +22,8 @@ static const int MOVEMENT_POINTS_LEVEL_BONUS = 1;
 	Army army_;
 
 public:
-	Hero( int gold, int level, int high_tier_army_num, int mid_tier_army_num, int low_tier_army_num, int x, int y ) :
-		GameObject(x, y), gold_( gold ), level_( level ),
+	Hero( int gold = 0, int level = 0, int high_tier_army_num = 0, int mid_tier_army_num = 0, int low_tier_army_num = 0,
+		int x = 0, int y = 0 ) : GameObject(x, y), gold_( gold ), level_( level ),
 		army_( high_tier_army_num, mid_tier_army_num, low_tier_army_num, x, y ){}
 	void travel_to( int x, int y ){ set_coordinates( x, y ); }
 	int get_level() const { return level_; }

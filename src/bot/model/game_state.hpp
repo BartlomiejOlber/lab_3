@@ -15,7 +15,7 @@
 
 namespace model {
 
-class GameState {
+struct GameState {
 
 	Hero my_hero_;
 	Hero enemy_hero_;
