@@ -18,6 +18,7 @@ class Entity : public GameObject {
 	Tier tier_;
 
 public:
+	Entity( int tier, int x, int y ) : GameObject( x, y ), tier_( TierConverter::from_int( tier ) ){}
 	Entity( Tier tier, int x, int y ) : GameObject( x, y ), tier_( tier ){}
 	void set_tier( Tier tier ){ tier_ = tier; }
 	Tier get_tier() const { return tier_;}

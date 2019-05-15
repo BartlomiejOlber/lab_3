@@ -16,6 +16,14 @@ enum class Tier{
 	HIGH = 2
 };
 
+class TierConverter {
+
+public:
+	static Tier from_int( int tier ){
+		return static_cast<Tier>(tier);
+	}
+};
+
 }//end namespace
 
 #endif /* BOT_MODEL_TIER_HPP_ */

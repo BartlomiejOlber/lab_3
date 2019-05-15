@@ -17,6 +17,14 @@ enum class Status {
 	NEUTRAL = 2
 };
 
+class StatusConverter {
+
+public:
+	static Status from_int( int status ){
+		return static_cast<Status>( status );
+	}
+};
+
 }//end namespace
 
 #endif /* BOT_MODEL_STATUS_HPP_ */

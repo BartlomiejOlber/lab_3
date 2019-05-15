@@ -16,22 +16,29 @@ namespace bot {
 
 class ScreenCapture {
 
+	typedef std::vector<std::vector <std::vector<int> > > AllParameters;
+	typedef std::vector<std::vector<int> > OneTypeParameters;
+	typedef std::vector<std::pair<int, int> > AllCoordinates;
+	typedef std::pair<int, int> MapSize;
+	typedef std::vector<int> ObjectParameters;
+
 public:
 	void capture_screen( model::GameState& );
 
 private:
-	void make_unique_coordinates_( std::vector<std::pair<int, int> >& coordinates, const std::pair<int, int>& map_size,
-			int objects_number );
-	void randomize_hero_( std::array<int,7>& hero_properties );
-	void randomize_castle_( std::array<int,11>& castle_properties );
-	void randomize_building_( std::array<int,4>& building_properties );
-	void randomize_guarded_building_( std::array<int,6>&  guarded_building_properties );
-	void randomize_gold_( std::array<int,3>& gold_properties );
-	void randomize_troop_( std::array<int,4>& troop_properties );
-	void randomize_map_size_( std::pair<int, int>& map_size );
-	void randomize_map_objects_number_( const std::pair<int, int>& map_size, int& objects_number );
-	void randomize_map_objects_types_( std::array<int,4>& object_types, int objects_number );
-
+	void make_all_parameters_( AllParameters& all_parameters, const ObjectParameters& object_types );
+	void merge_coordinates_( AllParameters& all_parameters, const AllCoordinates& coordinates );
+	void make_unique_coordinates_( AllCoordinates& coordinates, const MapSize& map_size,
+		int objects_number );
+	void randomize_hero_( ObjectParameters& hero_properties );
+	void randomize_castle_( ObjectParameters& castle_properties );
+	void randomize_building_( ObjectParameters& building_properties );
+	void randomize_guarded_building_( ObjectParameters&  guarded_building_properties );
+	void randomize_gold_( ObjectParameters& gold_properties );
+	void randomize_troop_( ObjectParameters& troop_properties );
+	void randomize_map_size_( MapSize& map_size );
+	void randomize_map_objects_number_( const MapSize& map_size, int& objects_number );
+	void randomize_map_objects_types_( ObjectParameters& object_types, int objects_number );
 };
 
 }

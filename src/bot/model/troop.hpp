@@ -19,6 +19,7 @@ class Troop : public Entity {
 
 public:
 	Troop( int quantity, Tier tier, int x, int y ) : Entity( tier, x, y ), quantity_( quantity ) {}
+	Troop( int quantity, int tier, int x, int y ) : Entity( tier, x, y ), quantity_( quantity ) {}
 	int get_quantity() const { return quantity_; }
 	void recruit( int quantity ){ quantity_ += quantity; }
 	void kill( int quantity ){ quantity >= quantity_ ? quantity_ = 0 : quantity_ -= quantity; }

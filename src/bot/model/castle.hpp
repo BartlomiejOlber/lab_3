@@ -8,7 +8,7 @@
 #ifndef BOT_MODEL_CASTLE_HPP_
 #define BOT_MODEL_CASTLE_HPP_
 
-#include <array>
+#include <vector>
 #include <iostream>
 #include "army.hpp"
 #include "building.hpp"
@@ -54,7 +54,7 @@ public:
 		mid_tier_buildings_num_( mid_tier_buildings_num ), low_tier_buildings_num_( low_tier_buildings_num ),
 		high_tier_recruitment_num_( high_tier_recruitment_num ), mid_tier_recruitment_num_( mid_tier_recruitment_num ),
 		low_tier_recruitment_num_( low_tier_recruitment_num ) {}
-	Castle( const std::array<int,11>& params, Status status ) : GameObject(params[9], params[10]),
+	Castle( const std::vector<int>& params, Status status ) : GameObject(params[9], params[10]),
 		garrison_( params[0], params[1], params[2], params[9], params[10] ), status_( status ),
 		high_tier_buildings_num_( params[3] ), mid_tier_buildings_num_( params[4] ),
 		low_tier_buildings_num_( params[5] ), high_tier_recruitment_num_( params[6] ),
