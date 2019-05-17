@@ -11,6 +11,10 @@
 #include "screen_capture.hpp"
 #include "model/status.hpp"
 
+#include <iostream>
+using namespace std;
+
+
 namespace bot {
 
 void ScreenCapture::capture_screen( model::GameState& game_state )
@@ -85,6 +89,12 @@ void ScreenCapture::make_all_parameters_( AllParameters& all_parameters, const O
 		guarded_buildings_properties.push_back( guarded_building_properties );
 		guarded_building_properties.clear();
 	}
+	all_parameters.push_back( castles_properties );
+	all_parameters.push_back( heros_properties );
+	all_parameters.push_back( golds_properties );
+	all_parameters.push_back( troops_properties );
+	all_parameters.push_back( buildings_properties );
+	all_parameters.push_back( guarded_buildings_properties );
 }
 
 void ScreenCapture::merge_coordinates_( AllParameters& all_parameters, const AllCoordinates& coordinates )

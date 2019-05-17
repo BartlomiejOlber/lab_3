@@ -15,8 +15,10 @@ int main() {
 	bot::ScreenCapture screen;
 	screen.capture_screen( game );
 	game.my_castle_.print();
-
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	game.enemy_castle_.print();
+	for( auto it = game.buildings_.begin(); it != game.buildings_.end(); ++it ){
+		cout<<"\n\t x,y,t,s"<<it->get_x()<<" "<<it->get_y()<<" "<<static_cast<int>(it->get_tier())<<" "<<static_cast<int>(it->get_status());
+	}
 	return 0;
 }
