@@ -15,6 +15,11 @@ namespace model {
 
 class Troop : public Entity {
 
+public:
+	static const int HIGH_TIER_FACTOR = 50;
+	static const int MID_TIER_FACTOR = 10;
+
+private:
 	int quantity_;
 
 public:
@@ -24,6 +29,10 @@ public:
 	void recruit( int quantity ){ quantity_ += quantity; }
 	void kill( int quantity ){ quantity >= quantity_ ? quantity_ = 0 : quantity_ -= quantity; }
 	void vanish(){ quantity_ = 0;}
+	int count_troop_force() const { if( get_tier() == Tier::HIGH ) return quantity_ * HIGH_TIER_FACTOR;
+		if( get_tier() == Tier::MEDIUM ) return quantity_ * MID_TIER_FACTOR;
+		return quantity_;
+	}
 };
 
 typedef std::vector<Troop> TroopContainer;

@@ -9,7 +9,7 @@
 #define BOT_MODEL_PICK_UP_ACTION_HPP_
 
 
-#include "hero_actions.hpp"
+#include "hero_action.hpp"
 
 namespace model {
 

@@ -26,6 +26,7 @@ public:
 	void conquer(){  take_control(); guards_.vanish(); }
 	Tier get_guards_tier() const { return guards_.get_tier(); }
 	int get_guards_quantity() const { return guards_.get_quantity(); }
+	int count_guards_force() const { return guards_.count_troop_force();  }
 
 };
 

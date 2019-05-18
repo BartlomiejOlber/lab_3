@@ -14,6 +14,8 @@ namespace model {
 
 class CastleAction : public Action {
 
+public:
+	explicit CastleAction( const GameObject& target ) : Action( target ){}
 
 };
 

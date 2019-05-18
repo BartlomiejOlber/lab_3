@@ -9,7 +9,7 @@
 #define BOT_MODEL_ENTER_ACTION_HPP_
 
 
-#include "hero_actions.hpp"
+#include "hero_action.hpp"
 
 namespace model {
 

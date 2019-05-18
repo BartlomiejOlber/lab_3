@@ -8,7 +8,7 @@
 #ifndef BOT_MODEL_TRAVEL_TO_ACTION_HPP_
 #define BOT_MODEL_TRAVEL_TO_ACTION_HPP_
 
-#include "hero_actions.hpp"
+#include "hero_action.hpp"
 
 namespace model {
 

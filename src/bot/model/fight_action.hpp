@@ -8,7 +8,7 @@
 #ifndef BOT_MODEL_FIGHT_ACTION_HPP_
 #define BOT_MODEL_FIGHT_ACTION_HPP_
 
-#include "hero_actions.hpp"
+#include "hero_action.hpp"
 
 namespace model {
 

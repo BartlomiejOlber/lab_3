@@ -14,7 +14,8 @@ namespace model {
 
 class BuildMidTierAction : public CastleAction {
 
-
+public:
+	BuildMidTierAction( const GameObject& target ) : CastleAction( target ){}
 };
 
 }
