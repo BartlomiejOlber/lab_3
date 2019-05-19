@@ -22,7 +22,7 @@ class Building : public GameObject {
 public:
 
 	Building( Tier tier, Status status, int x, int y ) : GameObject(x, y), tier_( tier ), status_( status ){}
-	Building( int tier, int status, int x, int y ) : GameObject(x, y), tier_( TierConverter::from_int(tier) ),
+	Building( int tier = 0, int status = 0, int x = 0, int y = 0 ) : GameObject(x, y), tier_( TierConverter::from_int(tier) ),
 		status_( StatusConverter::from_int( status ) ){}
 	void take_control(){ status_ = Status::FRIEND; }
 	void set_status( Status status ){ status_ = status; }

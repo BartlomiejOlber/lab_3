@@ -19,7 +19,7 @@ class Gold : public GameObject {
 
 public:
 
-	Gold( int quantity, int x, int y ) : GameObject(x, y), quantity_( quantity ){}
+	Gold( int quantity = 0, int x = 0, int y = 0) : GameObject(x, y), quantity_( quantity ){}
 	int get_quantity(){ return quantity_; }
 
 };

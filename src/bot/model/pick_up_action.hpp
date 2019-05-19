@@ -15,7 +15,8 @@ namespace model {
 
 class PickUpAction : public HeroAction {
 
-
+public:
+	PickUpAction( const GameObject& target ) : HeroAction( target ){}
 };
 
 }

@@ -16,6 +16,7 @@ class HeroAction : public Action {
 
 public:
 	explicit HeroAction( const GameObject& target ) : Action( target ){}
+	virtual ~HeroAction(){};
 };
 
 }

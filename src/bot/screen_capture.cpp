@@ -136,7 +136,7 @@ void ScreenCapture::randomize_hero_( ObjectParameters& hero_properties )
     std::uniform_int_distribution<std::mt19937::result_type> high_tier_troop_quantity(0,30);
     std::uniform_int_distribution<std::mt19937::result_type> mid_tier_troop_quantity(0,150);
     std::uniform_int_distribution<std::mt19937::result_type> low_tier_troop_quantity(0,500);
-    std::uniform_int_distribution<std::mt19937::result_type> gold_quantity(0,500);
+    std::uniform_int_distribution<std::mt19937::result_type> gold_quantity(0,1000);
     std::uniform_int_distribution<std::mt19937::result_type> level(1,25);
     hero_properties.push_back( gold_quantity(rng)*100 );
     hero_properties.push_back(level(rng));

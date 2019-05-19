@@ -21,7 +21,7 @@ public:
 
 	GuardedBuilding( Tier building_tier, Status status, int guards_num, Tier guards_tier, int x, int y ) :
 		Building( building_tier, status, x, y ), guards_( guards_num, guards_tier, x, y ) {}
-	GuardedBuilding( int building_tier, int status, int guards_num, int guards_tier, int x, int y ) :
+	GuardedBuilding( int building_tier = 0, int status = 0, int guards_num = 0, int guards_tier = 0, int x = 0, int y = 0 ) :
 		Building( building_tier, status, x, y ), guards_( guards_num, TierConverter::from_int(guards_tier), x, y ) {}
 	void conquer(){  take_control(); guards_.vanish(); }
 	Tier get_guards_tier() const { return guards_.get_tier(); }

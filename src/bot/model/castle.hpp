@@ -65,9 +65,9 @@ public:
 	void build_low_tier(){ ++low_tier_buildings_num_; }
 	void build_mid_tier(){ ++mid_tier_buildings_num_; }
 	void build_high_tier(){ ++high_tier_buildings_num_; }
-	void recruit_high_tier( int quantity ){ high_tier_recruitment_num_+=quantity; }
-	void recruit_mid_tier( int quantity ){ mid_tier_recruitment_num_+=quantity; }
-	void recruit_low_tier( int quantity ){ low_tier_recruitment_num_+=quantity; }
+	void recruit_high_tier( int quantity ){ high_tier_recruitment_num_-=quantity; garrison_.recruit_high_tier( quantity ); }
+	void recruit_mid_tier( int quantity ){ mid_tier_recruitment_num_-=quantity; garrison_.recruit_mid_tier( quantity ); }
+	void recruit_low_tier( int quantity ){ low_tier_recruitment_num_-=quantity; garrison_.recruit_low_tier( quantity ); }
 	int get_high_tier_recruitment_num() const { return high_tier_recruitment_num_; }
 	int get_mid_tier_recruitment_num() const { return mid_tier_recruitment_num_; }
 	int get_low_tier_recruitment_num() const { return low_tier_recruitment_num_; }
@@ -75,6 +75,7 @@ public:
 	bool is_development_available_mid() const { return mid_tier_buildings_num_<MAX_MID_TIER_BUILDINGS ? true : false; }
 	bool is_development_available_low() const { return low_tier_buildings_num_<MAX_LOW_TIER_BUILDINGS ? true : false; }
 	int count_castle_force() const {  return garrison_.count_army_force() * defence_bonus(); }
+	void conquer(){ garrison_.vanish(); status_ = Status::FRIEND; }
 
 	void print(){ std::cout << garrison_.get_high_tier_quantity()<< " "<< garrison_.get_low_tier_quantity()<< " "<<
 		garrison_.get_mid_tier_quantity() << " status: "<< static_cast<int>(status_); }

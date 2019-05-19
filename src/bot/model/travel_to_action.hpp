@@ -14,7 +14,8 @@ namespace model {
 
 class TravelToAction : public HeroAction {
 
-
+public:
+	TravelToAction( const GameObject& target ) : HeroAction( target ){}
 };
 
 }

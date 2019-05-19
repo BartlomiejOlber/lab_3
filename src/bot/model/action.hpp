@@ -9,6 +9,7 @@
 #define BOT_MODEL_ACTION_HPP_
 
 #include <vector>
+#include <memory>
 #include "game_object.hpp"
 
 namespace model {
@@ -20,10 +21,10 @@ class Action {
 public:
 	explicit Action( const GameObject& target ) : target_( target ){}
 	explicit Action( int x, int y ) :  target_( x, y ){}
-	virtual ~Action() = 0;
+	virtual ~Action(){};
 };
 
-typedef std::vector<Action> ActionScenario;
+typedef std::vector<std::unique_ptr<Action> > ActionScenario;
 
 }
 

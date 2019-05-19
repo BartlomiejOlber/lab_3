@@ -19,6 +19,7 @@ public:
 static const int MOVEMENT_POINTS = 5;
 static constexpr double MOVEMENT_POINTS_LEVEL_BONUS = 0.4;
 static constexpr double ARMYFORCE_FACTOR = 0.05;
+static constexpr double CASUALTIES_FACTOR = 0.33;
 
 private:
 	int gold_;
@@ -33,6 +34,7 @@ public:
 	Hero( const std::vector<int>& params, Status status ) : GameObject( params[5], params[6]), gold_( params[0] ),
 		level_( params[1] ), army_( params[2], params[3], params[4], params[5], params[6] ), status_( status ){}
 	void travel_to( int x, int y ){ set_coordinates( x, y ); }
+	void travel_to( const GameObject& object ){ set_coordinates( object.get_x(), object.get_y() ); }
 	int get_level() const { return level_; }
 	int get_gold() const { return gold_; }
 	void pick_up_gold( int quantity ) { gold_ += quantity; }
@@ -41,8 +43,13 @@ public:
 	int get_low_tier_army_quantity() const { return army_.get_low_tier_quantity(); }
 	int get_movement_points() const { return (MOVEMENT_POINTS + level_*MOVEMENT_POINTS_LEVEL_BONUS); }
 	int count_hero_force() const { return army_.count_army_force() * ( 1 + level_ * ARMYFORCE_FACTOR ); }
-	bool is_reachable_( const model::GameObject& object ) { return get_movement_points() >= get_distance( object )  ?
-			 true : false; }
+	bool is_reachable( int movement_points, const model::GameObject& object ) const  { return movement_points >=
+		get_distance( object )  ? true : false; }
+	void kill(){ status_ = Status::NEUTRAL; }
+	void kill( int casualties ){ army_.kill_high_tier( casualties*CASUALTIES_FACTOR );
+		army_.kill_mid_tier( casualties*CASUALTIES_FACTOR ); army_.kill_low_tier( casualties*CASUALTIES_FACTOR );
+	}
+	bool is_alive() const { return status_ == Status::NEUTRAL ? true : false; }
 
 };
 

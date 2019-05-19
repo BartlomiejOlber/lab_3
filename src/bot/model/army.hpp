@@ -30,8 +30,8 @@ public:
 	void recruit_high_tier( int quantity ){ high_tier_troop_.recruit( quantity ); }
 	void recruit_mid_tier( int quantity ){ mid_tier_troop_.recruit( quantity ); }
 	void recruit_low_tier( int quantity ){ low_tier_troop_.recruit( quantity ); }
-	void kill_high_tier( int quantity ){ high_tier_troop_.recruit( quantity ); }
-	void kill_mid_tier( int quantity ){ mid_tier_troop_.kill( quantity ); }
+	void kill_high_tier( int quantity ){ high_tier_troop_.kill( quantity/Troop::HIGH_TIER_FACTOR ); }
+	void kill_mid_tier( int quantity ){ mid_tier_troop_.kill( quantity/Troop::MID_TIER_FACTOR ); }
 	void kill_low_tier( int quantity ){ low_tier_troop_.kill( quantity ); }
 	void vanish(){ high_tier_troop_.vanish(); mid_tier_troop_.vanish(); low_tier_troop_.vanish(); }
 	int count_army_force() const { return high_tier_troop_.count_troop_force() + mid_tier_troop_.count_troop_force() +

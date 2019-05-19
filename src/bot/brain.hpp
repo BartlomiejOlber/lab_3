@@ -38,6 +38,12 @@ private:
 	bool is_attack_worth_( const model::Hero& enemy_hero );
 	bool is_attack_worth_( const model::GuardedBuilding& guarded_building );
 	int count_battle_casualties_( int opponent_force );
+	int count_available_to_buy_( int gold, int cost, int limit );
+	void find_closest_guarded_building_( model::GuardedBuilding& guarded_building );
+	void find_closest_building_( model::Building& building );
+	void find_closest_gold_( int& index, model::Gold& gold );
+	void find_closest_troop_( int& index, model::Troop& troop );
+	void find_enemy_castle_direction_( int movement_points, model::GameObject& direction );
 
 };
 

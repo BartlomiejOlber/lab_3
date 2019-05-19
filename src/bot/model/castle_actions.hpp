@@ -16,6 +16,7 @@ class CastleAction : public Action {
 
 public:
 	explicit CastleAction( const GameObject& target ) : Action( target ){}
+	virtual ~CastleAction(){};
 
 };
 
