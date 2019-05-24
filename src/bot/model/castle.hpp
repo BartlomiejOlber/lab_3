@@ -59,7 +59,7 @@ public:
 		high_tier_buildings_num_( params[3] ), mid_tier_buildings_num_( params[4] ),
 		low_tier_buildings_num_( params[5] ), high_tier_recruitment_num_( params[6] ),
 		mid_tier_recruitment_num_( params[7] ), low_tier_recruitment_num_( params[8] ) {}
-	double defence_bonus() const { return (low_tier_buildings_num_*LOW_TIER_BUILDING_DEFENCE_BONUS +
+	double defence_bonus() const { return 1 + (low_tier_buildings_num_*LOW_TIER_BUILDING_DEFENCE_BONUS +
 		(mid_tier_buildings_num_*MID_TIER_BUILDING_DEFENCE_BONUS) + (high_tier_buildings_num_*HIGH_TIER_BUILDING_DEFENCE_BONUS) );
 	}
 	void build_low_tier(){ ++low_tier_buildings_num_; }
@@ -76,9 +76,8 @@ public:
 	bool is_development_available_low() const { return low_tier_buildings_num_<MAX_LOW_TIER_BUILDINGS ? true : false; }
 	int count_castle_force() const {  return garrison_.count_army_force() * defence_bonus(); }
 	void conquer(){ garrison_.vanish(); status_ = Status::FRIEND; }
+	Status get_status() const { return status_; }
 
-	void print(){ std::cout << garrison_.get_high_tier_quantity()<< " "<< garrison_.get_low_tier_quantity()<< " "<<
-		garrison_.get_mid_tier_quantity() << " status: "<< static_cast<int>(status_); }
 
 };
 
