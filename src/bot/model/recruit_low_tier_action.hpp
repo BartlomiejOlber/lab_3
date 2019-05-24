@@ -17,6 +17,10 @@ class RecruitLowTierAction : public CastleAction {
 
 public:
 	RecruitLowTierAction( const GameObject& target ) : CastleAction( target ){}
+
+	virtual void print(){  std::cout << "recruit low tier troop in my castle in location ( " << target_.get_x()<<", "<<
+		target_.get_y()<<" )"<<std::endl;
+	}
 };
 
 }

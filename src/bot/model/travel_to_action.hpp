@@ -16,6 +16,10 @@ class TravelToAction : public HeroAction {
 
 public:
 	TravelToAction( const GameObject& target ) : HeroAction( target ){}
+
+	virtual void print(){  std::cout << "my hero travel to location ( " << target_.get_x()<<", "<<
+		target_.get_y()<<" )"<<std::endl;
+	}
 };
 
 }

@@ -17,6 +17,10 @@ class PickUpAction : public HeroAction {
 
 public:
 	PickUpAction( const GameObject& target ) : HeroAction( target ){}
+
+	virtual void print(){  std::cout << "my hero pick up in location ( " << target_.get_x()<<", "<<
+		target_.get_y()<<" )"<<std::endl;
+	}
 };
 
 }

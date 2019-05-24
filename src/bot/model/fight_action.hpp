@@ -16,6 +16,10 @@ class FightAction : public HeroAction {
 
 public:
 	FightAction( const GameObject& target ) : HeroAction( target ){}
+
+	virtual void print(){  std::cout << "my hero fight in location ( " << target_.get_x()<<", "<<
+		target_.get_y()<<" )"<<std::endl;
+	}
 };
 
 }

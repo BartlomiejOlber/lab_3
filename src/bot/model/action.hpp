@@ -10,18 +10,22 @@
 
 #include <vector>
 #include <memory>
+#include <iostream>
 #include "game_object.hpp"
 
 namespace model {
 
 class Action {
 
+protected:
 	GameObject target_;
 
 public:
 	explicit Action( const GameObject& target ) : target_( target ){}
 	explicit Action( int x, int y ) :  target_( x, y ){}
 	virtual ~Action(){};
+
+	virtual void print(){};
 };
 
 typedef std::vector<std::unique_ptr<Action> > ActionScenario;

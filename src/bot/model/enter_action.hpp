@@ -17,6 +17,10 @@ class EnterAction : public HeroAction {
 
 public:
 	EnterAction( const GameObject& target ) : HeroAction( target ){}
+
+	virtual void print(){  std::cout << "my hero enter object in location ( " << target_.get_x()<<", "<<
+		target_.get_y()<<" )"<<std::endl;
+	}
 };
 
 }

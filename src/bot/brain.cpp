@@ -248,6 +248,14 @@ void Brain::find_enemy_castle_direction_( int movement_points, model::GameObject
 	int x =  game_state_.enemy_castle_.get_x() - game_state_.my_hero_.get_x();
 	int y =  game_state_.enemy_castle_.get_y() - game_state_.my_hero_.get_y();
 	double distance = sqrt( pow( x, 2 ) +pow( y, 2 ) );
-	direction.set_coordinates( x*(movement_points/distance), y*(movement_points/distance ) );
+	if( distance ){
+		direction.set_coordinates( game_state_.my_hero_.get_x() + x*(movement_points/distance),
+				game_state_.my_hero_.get_y() + y*(movement_points/distance ) );
+	}else{
+		direction.set_coordinates( game_state_.enemy_castle_.get_x(), game_state_.enemy_castle_.get_y() );
+	}
+
 }
+
+
 }
