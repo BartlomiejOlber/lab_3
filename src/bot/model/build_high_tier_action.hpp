@@ -16,6 +16,10 @@ class BuildHighTierAction : public CastleAction {
 
 public:
 	BuildHighTierAction( const GameObject& target ) : CastleAction( target ){}
+
+	virtual void print(){  std::cout << "Build high tier building in my castle in location ( " << target_.get_x()<<", "<<
+		target_.get_y()<<" )"<<std::endl;
+	}
 };
 
 }
