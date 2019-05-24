@@ -37,6 +37,7 @@ private:
 	bool is_attack_worth_( const model::Castle& enemy_castle );
 	bool is_attack_worth_( const model::Hero& enemy_hero );
 	bool is_attack_worth_( const model::GuardedBuilding& guarded_building );
+	bool is_reachable_( int movement_points, const model::GameObject& object );
 	int count_battle_casualties_( int opponent_force );
 	int count_available_to_buy_( int gold, int cost, int limit );
 	void find_closest_guarded_building_( model::GuardedBuilding& guarded_building );

@@ -80,7 +80,7 @@ void Brain::make_castle_actions_( model::ActionScenario& action_scenario )
 void Brain::make_hero_actions_( model::ActionScenario& action_scenario )
 {
 	int movement_remaining = game_state_.my_hero_.get_movement_points();
-	if( game_state_.my_hero_.is_reachable( movement_remaining, game_state_.enemy_hero_ ) &&
+	if( is_reachable_( movement_remaining, game_state_.enemy_hero_ ) &&
 			is_attack_worth_( game_state_.enemy_hero_ )){
 		action_scenario.push_back( std::unique_ptr<model::TravelToAction>( new model::TravelToAction(game_state_.enemy_hero_)));
 		action_scenario.push_back( std::unique_ptr<model::FightAction>( new model::FightAction(game_state_.enemy_hero_)));
@@ -89,7 +89,7 @@ void Brain::make_hero_actions_( model::ActionScenario& action_scenario )
 		game_state_.my_hero_.travel_to( game_state_.enemy_hero_ );
 		game_state_.enemy_hero_.kill();
 	}
-	if( game_state_.my_hero_.is_reachable( movement_remaining, game_state_.enemy_castle_ ) &&
+	if( is_reachable_( movement_remaining, game_state_.enemy_castle_ ) &&
 			is_attack_worth_( game_state_.enemy_castle_ )){
 		action_scenario.push_back( std::unique_ptr<model::TravelToAction>( new model::TravelToAction(game_state_.enemy_castle_)));
 		action_scenario.push_back( std::unique_ptr<model::FightAction>( new model::FightAction(game_state_.enemy_castle_)));
@@ -100,7 +100,7 @@ void Brain::make_hero_actions_( model::ActionScenario& action_scenario )
 	}
 	model::GuardedBuilding closest_guarded_building;
 	find_closest_guarded_building_( closest_guarded_building );
-	if( game_state_.my_hero_.is_reachable( movement_remaining, closest_guarded_building ) &&
+	if( is_reachable_( movement_remaining, closest_guarded_building ) &&
 			is_attack_worth_( closest_guarded_building )){
 		action_scenario.push_back( std::unique_ptr<model::TravelToAction>( new model::TravelToAction(closest_guarded_building)));
 		action_scenario.push_back( std::unique_ptr<model::FightAction>( new model::FightAction(closest_guarded_building)));
@@ -112,7 +112,7 @@ void Brain::make_hero_actions_( model::ActionScenario& action_scenario )
 	}
 	model::Building closest_building;
 	find_closest_building_( closest_building );
-	if( game_state_.my_hero_.is_reachable( movement_remaining, closest_building )){
+	if( is_reachable_( movement_remaining, closest_building )){
 		action_scenario.push_back( std::unique_ptr<model::TravelToAction>( new model::TravelToAction(closest_building)));
 		action_scenario.push_back( std::unique_ptr<model::EnterAction>( new model::EnterAction(closest_building)));
 		movement_remaining -= game_state_.my_hero_.get_distance( closest_building );
@@ -122,7 +122,7 @@ void Brain::make_hero_actions_( model::ActionScenario& action_scenario )
 	int index;
 	model::Gold closest_gold;
 	find_closest_gold_( index, closest_gold );
-	if( game_state_.my_hero_.is_reachable( movement_remaining, closest_gold )){
+	if( is_reachable_( movement_remaining, closest_gold )){
 		action_scenario.push_back( std::unique_ptr<model::TravelToAction>( new model::TravelToAction(closest_gold)));
 		action_scenario.push_back( std::unique_ptr<model::PickUpAction>( new model::PickUpAction(closest_gold)));
 		movement_remaining -= game_state_.my_hero_.get_distance( closest_gold );
@@ -132,7 +132,7 @@ void Brain::make_hero_actions_( model::ActionScenario& action_scenario )
 	}
 	model::Troop closest_troop;
 	find_closest_troop_( index, closest_troop );
-	if( game_state_.my_hero_.is_reachable( movement_remaining, closest_troop )){
+	if( is_reachable_( movement_remaining, closest_troop )){
 		action_scenario.push_back( std::unique_ptr<model::TravelToAction>( new model::TravelToAction(closest_troop)));
 		action_scenario.push_back( std::unique_ptr<model::FightAction>( new model::FightAction(closest_troop)));
 		movement_remaining -= game_state_.my_hero_.get_distance( closest_troop );
@@ -255,6 +255,11 @@ void Brain::find_enemy_castle_direction_( int movement_points, model::GameObject
 		direction.set_coordinates( game_state_.enemy_castle_.get_x(), game_state_.enemy_castle_.get_y() );
 	}
 
+}
+
+bool Brain::is_reachable_( int movement_points, const model::GameObject& object )
+{
+	return movement_points >= game_state_.my_hero_.get_distance( object )  ? true : false;
 }
 
 

@@ -43,13 +43,11 @@ public:
 	int get_low_tier_army_quantity() const { return army_.get_low_tier_quantity(); }
 	int get_movement_points() const { return (MOVEMENT_POINTS + level_*MOVEMENT_POINTS_LEVEL_BONUS); }
 	int count_hero_force() const { return army_.count_army_force() * ( 1 + level_ * ARMYFORCE_FACTOR ); }
-	bool is_reachable( int movement_points, const model::GameObject& object ) const  { return movement_points >=
-		get_distance( object )  ? true : false; }
 	void kill(){ status_ = Status::NEUTRAL; }
 	void kill( int casualties ){ army_.kill_high_tier( casualties*CASUALTIES_FACTOR );
 		army_.kill_mid_tier( casualties*CASUALTIES_FACTOR ); army_.kill_low_tier( casualties*CASUALTIES_FACTOR );
 	}
-	bool is_alive() const { return status_ == Status::NEUTRAL ? true : false; }
+	bool is_alive() const { return status_ == Status::NEUTRAL ? false : true; }
 
 };
 
