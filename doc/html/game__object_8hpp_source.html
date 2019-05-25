@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROI projekt 3: Plik źródłowy /home/bartlomiej/eclipse-workspace/lab_3/src/bot/model/game_object.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROI projekt 3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_29d667bb07f05bb7400afdc76794b290.html">bot</a></li><li class="navelem"><a class="el" href="dir_2a7267a0d10f160b8faa1b1819504b5f.html">model</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">game_object.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="game__object_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef BOT_MODEL_GAME_OBJECT_HPP_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define BOT_MODEL_GAME_OBJECT_HPP_</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemodel.html">model</a> {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classmodel_1_1GameObject.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmodel_1_1GameObject.html">GameObject</a> {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> coord_x_;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> coord_y_;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classmodel_1_1GameObject.html#aec3d26647ae22d325282e07b4391de0a">   31</a></span>&#160;    <a class="code" href="classmodel_1_1GameObject.html#aec3d26647ae22d325282e07b4391de0a">GameObject</a>( <span class="keywordtype">int</span> x = 0, <span class="keywordtype">int</span> y = 0 ) : coord_x_( x ), coord_y_( y ){};</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classmodel_1_1GameObject.html#add23441faffd638c0cba4950b8555364">   36</a></span>&#160;    <a class="code" href="classmodel_1_1GameObject.html#add23441faffd638c0cba4950b8555364">GameObject</a>( <span class="keyword">const</span> <a class="code" href="classmodel_1_1GameObject.html">GameObject</a>&amp; <span class="keywordtype">object</span> ) : coord_x_( object.<a class="code" href="classmodel_1_1GameObject.html#a7dd3d6798cbc6182908c8181114c8383">get_x</a>() ), coord_y_( object.<a class="code" href="classmodel_1_1GameObject.html#ac883bfccb78ec3e689d1672755bf44f8">get_y</a>() ){}</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classmodel_1_1GameObject.html#a3ed9274eb807ef622cf50ebe6126f297">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmodel_1_1GameObject.html#a3ed9274eb807ef622cf50ebe6126f297">set_coordinates</a>( <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y ){ coord_x_ = x; coord_y_ = y; };</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmodel_1_1GameObject.html#a7dd3d6798cbc6182908c8181114c8383">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classmodel_1_1GameObject.html#a7dd3d6798cbc6182908c8181114c8383">get_x</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> coord_x_; }</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classmodel_1_1GameObject.html#ac883bfccb78ec3e689d1672755bf44f8">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classmodel_1_1GameObject.html#ac883bfccb78ec3e689d1672755bf44f8">get_y</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> coord_y_; }</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classmodel_1_1GameObject.html#a294f5a3a05529858758edba9f9f02ee3">   44</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classmodel_1_1GameObject.html#a294f5a3a05529858758edba9f9f02ee3">get_distance</a>( <span class="keyword">const</span> <a class="code" href="classmodel_1_1GameObject.html">GameObject</a>&amp; destination )<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sqrt( pow( coord_x_ - destination.<a class="code" href="classmodel_1_1GameObject.html#a7dd3d6798cbc6182908c8181114c8383">get_x</a>(), 2 ) +</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        pow( coord_y_ - destination.<a class="code" href="classmodel_1_1GameObject.html#ac883bfccb78ec3e689d1672755bf44f8">get_y</a>(), 2 ) ); }</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classmodel_1_1GameObject.html#acfd1cc777708e9db44f59716db36c486">   47</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classmodel_1_1GameObject.html#acfd1cc777708e9db44f59716db36c486">~GameObject</a>(){};</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}<span class="comment">//end namespace</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BOT_MODEL_GAME_OBJECT_HPP_ */</span><span class="preprocessor"></span></div><div class="ttc" id="classmodel_1_1GameObject_html_acfd1cc777708e9db44f59716db36c486"><div class="ttname"><a href="classmodel_1_1GameObject.html#acfd1cc777708e9db44f59716db36c486">model::GameObject::~GameObject</a></div><div class="ttdeci">virtual ~GameObject()</div><div class="ttdoc">Wirtualny destruktor. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:47</div></div>
+<div class="ttc" id="classmodel_1_1GameObject_html_a7dd3d6798cbc6182908c8181114c8383"><div class="ttname"><a href="classmodel_1_1GameObject.html#a7dd3d6798cbc6182908c8181114c8383">model::GameObject::get_x</a></div><div class="ttdeci">int get_x() const</div><div class="ttdoc">Getter zwraca współrzędną x. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:40</div></div>
+<div class="ttc" id="namespacemodel_html"><div class="ttname"><a href="namespacemodel.html">model</a></div><div class="ttdef"><b>Definition:</b> action.hpp:17</div></div>
+<div class="ttc" id="classmodel_1_1GameObject_html"><div class="ttname"><a href="classmodel_1_1GameObject.html">model::GameObject</a></div><div class="ttdoc">Klasa GameObject. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:19</div></div>
+<div class="ttc" id="classmodel_1_1GameObject_html_ac883bfccb78ec3e689d1672755bf44f8"><div class="ttname"><a href="classmodel_1_1GameObject.html#ac883bfccb78ec3e689d1672755bf44f8">model::GameObject::get_y</a></div><div class="ttdeci">int get_y() const</div><div class="ttdoc">Getter zwraca współrzędną y. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:42</div></div>
+<div class="ttc" id="classmodel_1_1GameObject_html_a294f5a3a05529858758edba9f9f02ee3"><div class="ttname"><a href="classmodel_1_1GameObject.html#a294f5a3a05529858758edba9f9f02ee3">model::GameObject::get_distance</a></div><div class="ttdeci">int get_distance(const GameObject &amp;destination) const</div><div class="ttdoc">Funkcja obliczająca odległość pomiędzy obiektami; pierwiastek z sumy kwadratów. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:44</div></div>
+<div class="ttc" id="classmodel_1_1GameObject_html_add23441faffd638c0cba4950b8555364"><div class="ttname"><a href="classmodel_1_1GameObject.html#add23441faffd638c0cba4950b8555364">model::GameObject::GameObject</a></div><div class="ttdeci">GameObject(const GameObject &amp;object)</div><div class="ttdoc">Publiczny konstruktor kopiujący. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:36</div></div>
+<div class="ttc" id="classmodel_1_1GameObject_html_a3ed9274eb807ef622cf50ebe6126f297"><div class="ttname"><a href="classmodel_1_1GameObject.html#a3ed9274eb807ef622cf50ebe6126f297">model::GameObject::set_coordinates</a></div><div class="ttdeci">void set_coordinates(int x, int y)</div><div class="ttdoc">Setter ustawia współrzędne obiektu gry. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:38</div></div>
+<div class="ttc" id="classmodel_1_1GameObject_html_aec3d26647ae22d325282e07b4391de0a"><div class="ttname"><a href="classmodel_1_1GameObject.html#aec3d26647ae22d325282e07b4391de0a">model::GameObject::GameObject</a></div><div class="ttdeci">GameObject(int x=0, int y=0)</div><div class="ttdoc">Publiczny konstruktor domyślny. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

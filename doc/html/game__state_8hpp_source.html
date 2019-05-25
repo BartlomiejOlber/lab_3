@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROI projekt 3: Plik źródłowy /home/bartlomiej/eclipse-workspace/lab_3/src/bot/model/game_state.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROI projekt 3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_29d667bb07f05bb7400afdc76794b290.html">bot</a></li><li class="navelem"><a class="el" href="dir_2a7267a0d10f160b8faa1b1819504b5f.html">model</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">game_state.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="game__state_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef BOT_MODEL_GAME_STATE_HPP_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define BOT_MODEL_GAME_STATE_HPP_</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="hero_8hpp.html">hero.hpp</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="castle_8hpp.html">castle.hpp</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="guarded__building_8hpp.html">guarded_building.hpp</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gold_8hpp.html">gold.hpp</a>&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemodel.html">model</a> {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structmodel_1_1GameState.html">   22</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structmodel_1_1GameState.html">GameState</a> {</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structmodel_1_1GameState.html#a4117472d16817fad15015f2fdd29f792">   24</a></span>&#160;    <a class="code" href="classmodel_1_1Hero.html">Hero</a> <a class="code" href="structmodel_1_1GameState.html#a4117472d16817fad15015f2fdd29f792">my_hero</a>;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structmodel_1_1GameState.html#a460be6a1f98dcfad818686f241c35ad6">   26</a></span>&#160;    <a class="code" href="classmodel_1_1Hero.html">Hero</a> <a class="code" href="structmodel_1_1GameState.html#a460be6a1f98dcfad818686f241c35ad6">enemy_hero</a>;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structmodel_1_1GameState.html#a877bf51dc420a95db8bfd8ecc2d02131">   28</a></span>&#160;    <a class="code" href="classmodel_1_1Castle.html">Castle</a> <a class="code" href="structmodel_1_1GameState.html#a877bf51dc420a95db8bfd8ecc2d02131">my_castle</a>;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structmodel_1_1GameState.html#a32af616a72b81ca3dfff1afa5e7ecd39">   30</a></span>&#160;    <a class="code" href="classmodel_1_1Castle.html">Castle</a> <a class="code" href="structmodel_1_1GameState.html#a32af616a72b81ca3dfff1afa5e7ecd39">enemy_castle</a>;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structmodel_1_1GameState.html#abf5bb9d70022de2c70b5e575964d516d">   32</a></span>&#160;    <a class="code" href="building_8hpp.html#a73ce6a7004694882057ce332b6741811">BuildingContainer</a> <a class="code" href="structmodel_1_1GameState.html#abf5bb9d70022de2c70b5e575964d516d">buildings</a>;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structmodel_1_1GameState.html#a065ec91ab324eaf7e3a1bca69bb9fe68">   34</a></span>&#160;    <a class="code" href="guarded__building_8hpp.html#a4c05c1c79b1b5f3bbb54b04c990d53ce">GuardedBuildingContainer</a> <a class="code" href="structmodel_1_1GameState.html#a065ec91ab324eaf7e3a1bca69bb9fe68">guarded_buildings</a>;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structmodel_1_1GameState.html#a88fdf34d6fbb8cdc7bbbacd5a2732ce6">   36</a></span>&#160;    <a class="code" href="gold_8hpp.html#acc4c719f33d9505529826f5d8fe38836">GoldContainer</a> <a class="code" href="structmodel_1_1GameState.html#a88fdf34d6fbb8cdc7bbbacd5a2732ce6">map_gold</a>;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structmodel_1_1GameState.html#aec56cde504fbd48e60a504d6441d1dae">   38</a></span>&#160;    <a class="code" href="troop_8hpp.html#a98a8449fdd332f3100611e4f42735f26">TroopContainer</a> <a class="code" href="structmodel_1_1GameState.html#aec56cde504fbd48e60a504d6441d1dae">map_troops</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BOT_MODEL_GAME_STATE_HPP_ */</span><span class="preprocessor"></span></div><div class="ttc" id="structmodel_1_1GameState_html_a065ec91ab324eaf7e3a1bca69bb9fe68"><div class="ttname"><a href="structmodel_1_1GameState.html#a065ec91ab324eaf7e3a1bca69bb9fe68">model::GameState::guarded_buildings</a></div><div class="ttdeci">GuardedBuildingContainer guarded_buildings</div><div class="ttdoc">Składowa struktury; strzeżone budynki na mapie jako wektor klasy GuardedBuilding. ...</div><div class="ttdef"><b>Definition:</b> game_state.hpp:34</div></div>
+<div class="ttc" id="structmodel_1_1GameState_html_a32af616a72b81ca3dfff1afa5e7ecd39"><div class="ttname"><a href="structmodel_1_1GameState.html#a32af616a72b81ca3dfff1afa5e7ecd39">model::GameState::enemy_castle</a></div><div class="ttdeci">Castle enemy_castle</div><div class="ttdoc">Składowa struktury; zamek przeciwnika klasy Castle. </div><div class="ttdef"><b>Definition:</b> game_state.hpp:30</div></div>
+<div class="ttc" id="building_8hpp_html_a73ce6a7004694882057ce332b6741811"><div class="ttname"><a href="building_8hpp.html#a73ce6a7004694882057ce332b6741811">model::BuildingContainer</a></div><div class="ttdeci">std::vector&lt; Building &gt; BuildingContainer</div><div class="ttdoc">Wektor budynków. </div><div class="ttdef"><b>Definition:</b> building.hpp:62</div></div>
+<div class="ttc" id="guarded__building_8hpp_html"><div class="ttname"><a href="guarded__building_8hpp.html">guarded_building.hpp</a></div><div class="ttdoc">Moduł klasy GuardedBuilding. </div></div>
+<div class="ttc" id="castle_8hpp_html"><div class="ttname"><a href="castle_8hpp.html">castle.hpp</a></div><div class="ttdoc">Moduł klasy Castle. </div></div>
+<div class="ttc" id="namespacemodel_html"><div class="ttname"><a href="namespacemodel.html">model</a></div><div class="ttdef"><b>Definition:</b> action.hpp:17</div></div>
+<div class="ttc" id="structmodel_1_1GameState_html_a877bf51dc420a95db8bfd8ecc2d02131"><div class="ttname"><a href="structmodel_1_1GameState.html#a877bf51dc420a95db8bfd8ecc2d02131">model::GameState::my_castle</a></div><div class="ttdeci">Castle my_castle</div><div class="ttdoc">Składowa struktury; zamek bota klasy Castle. </div><div class="ttdef"><b>Definition:</b> game_state.hpp:28</div></div>
+<div class="ttc" id="gold_8hpp_html"><div class="ttname"><a href="gold_8hpp.html">gold.hpp</a></div><div class="ttdoc">Moduł klasy Gold. </div></div>
+<div class="ttc" id="structmodel_1_1GameState_html_a88fdf34d6fbb8cdc7bbbacd5a2732ce6"><div class="ttname"><a href="structmodel_1_1GameState.html#a88fdf34d6fbb8cdc7bbbacd5a2732ce6">model::GameState::map_gold</a></div><div class="ttdeci">GoldContainer map_gold</div><div class="ttdoc">Składowa struktury; złoto na mapie jako wektor klasy Gold. </div><div class="ttdef"><b>Definition:</b> game_state.hpp:36</div></div>
+<div class="ttc" id="classmodel_1_1Hero_html"><div class="ttname"><a href="classmodel_1_1Hero.html">model::Hero</a></div><div class="ttdoc">Klasa Hero. </div><div class="ttdef"><b>Definition:</b> hero.hpp:20</div></div>
+<div class="ttc" id="structmodel_1_1GameState_html_a4117472d16817fad15015f2fdd29f792"><div class="ttname"><a href="structmodel_1_1GameState.html#a4117472d16817fad15015f2fdd29f792">model::GameState::my_hero</a></div><div class="ttdeci">Hero my_hero</div><div class="ttdoc">Składowa struktury; bohater bota klasy Hero. </div><div class="ttdef"><b>Definition:</b> game_state.hpp:24</div></div>
+<div class="ttc" id="hero_8hpp_html"><div class="ttname"><a href="hero_8hpp.html">hero.hpp</a></div><div class="ttdoc">Moduł klasy Hero. </div></div>
+<div class="ttc" id="gold_8hpp_html_acc4c719f33d9505529826f5d8fe38836"><div class="ttname"><a href="gold_8hpp.html#acc4c719f33d9505529826f5d8fe38836">model::GoldContainer</a></div><div class="ttdeci">std::vector&lt; Gold &gt; GoldContainer</div><div class="ttdoc">Wektor złota. </div><div class="ttdef"><b>Definition:</b> gold.hpp:38</div></div>
+<div class="ttc" id="troop_8hpp_html_a98a8449fdd332f3100611e4f42735f26"><div class="ttname"><a href="troop_8hpp.html#a98a8449fdd332f3100611e4f42735f26">model::TroopContainer</a></div><div class="ttdeci">std::vector&lt; Troop &gt; TroopContainer</div><div class="ttdoc">Wektor oddziałów. </div><div class="ttdef"><b>Definition:</b> troop.hpp:70</div></div>
+<div class="ttc" id="classmodel_1_1Castle_html"><div class="ttname"><a href="classmodel_1_1Castle.html">model::Castle</a></div><div class="ttdoc">Klasa Castle. </div><div class="ttdef"><b>Definition:</b> castle.hpp:22</div></div>
+<div class="ttc" id="structmodel_1_1GameState_html_abf5bb9d70022de2c70b5e575964d516d"><div class="ttname"><a href="structmodel_1_1GameState.html#abf5bb9d70022de2c70b5e575964d516d">model::GameState::buildings</a></div><div class="ttdeci">BuildingContainer buildings</div><div class="ttdoc">Składowa struktury; budynki na mapie jako wektor klasy Building. </div><div class="ttdef"><b>Definition:</b> game_state.hpp:32</div></div>
+<div class="ttc" id="structmodel_1_1GameState_html_a460be6a1f98dcfad818686f241c35ad6"><div class="ttname"><a href="structmodel_1_1GameState.html#a460be6a1f98dcfad818686f241c35ad6">model::GameState::enemy_hero</a></div><div class="ttdeci">Hero enemy_hero</div><div class="ttdoc">Składowa struktury; bohater przeciwnika klasy Hero. </div><div class="ttdef"><b>Definition:</b> game_state.hpp:26</div></div>
+<div class="ttc" id="structmodel_1_1GameState_html_aec56cde504fbd48e60a504d6441d1dae"><div class="ttname"><a href="structmodel_1_1GameState.html#aec56cde504fbd48e60a504d6441d1dae">model::GameState::map_troops</a></div><div class="ttdeci">TroopContainer map_troops</div><div class="ttdoc">Składowa struktury; oddziały na mapie jako wektor klasy Troop. </div><div class="ttdef"><b>Definition:</b> game_state.hpp:38</div></div>
+<div class="ttc" id="guarded__building_8hpp_html_a4c05c1c79b1b5f3bbb54b04c990d53ce"><div class="ttname"><a href="guarded__building_8hpp.html#a4c05c1c79b1b5f3bbb54b04c990d53ce">model::GuardedBuildingContainer</a></div><div class="ttdeci">std::vector&lt; GuardedBuilding &gt; GuardedBuildingContainer</div><div class="ttdoc">Wektor strzeżonych budynków. </div><div class="ttdef"><b>Definition:</b> guarded_building.hpp:58</div></div>
+<div class="ttc" id="structmodel_1_1GameState_html"><div class="ttname"><a href="structmodel_1_1GameState.html">model::GameState</a></div><div class="ttdoc">Struktura GameState. </div><div class="ttdef"><b>Definition:</b> game_state.hpp:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

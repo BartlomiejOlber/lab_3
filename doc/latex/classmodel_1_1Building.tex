@@ -1,0 +1,106 @@
+\hypertarget{classmodel_1_1Building}{}\section{Dokumentacja klasy model\+:\+:Building}
+\label{classmodel_1_1Building}\index{model\+::\+Building@{model\+::\+Building}}
+
+
+Klasa \hyperlink{classmodel_1_1Building}{Building}.  
+
+
+
+
+{\ttfamily \#include $<$building.\+hpp$>$}
+
+
+
+Diagram dziedziczenia dla model\+:\+:Building\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classmodel_1_1Building__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla model\+:\+:Building\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classmodel_1_1Building__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1Building_a17a7270e4283374db400aff509e59f27}{Building} (\hyperlink{tier_8hpp_a50a003ab1ea342f138c038fabfd1ee55}{Tier} tier, \hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status} status, int x, int y)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1Building_af8f2ee9d61a38ca85c6d035b8a1090e7}{Building} (int tier=0, int status=0, int x=0, int y=0)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor domyślny z parametrami integerowymi, konwertujący tier i status do enumeracji. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Building_a1926969cec3c46b9a38bf8a0c425dbc7}\label{classmodel_1_1Building_a1926969cec3c46b9a38bf8a0c425dbc7}} 
+void \hyperlink{classmodel_1_1Building_a1926969cec3c46b9a38bf8a0c425dbc7}{take\+\_\+control} ()
+\begin{DoxyCompactList}\small\item\em Funkcja objęcia kontroli; zmienia status budynku na przyjazny. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Building_a41dc923964b54592825864183d181964}\label{classmodel_1_1Building_a41dc923964b54592825864183d181964}} 
+void \hyperlink{classmodel_1_1Building_a41dc923964b54592825864183d181964}{set\+\_\+status} (\hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status} status)
+\begin{DoxyCompactList}\small\item\em Setter ustatwia status. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Building_a1fec2540ae9c9acf26734fcc2d8902d8}\label{classmodel_1_1Building_a1fec2540ae9c9acf26734fcc2d8902d8}} 
+void \hyperlink{classmodel_1_1Building_a1fec2540ae9c9acf26734fcc2d8902d8}{set\+\_\+tier} (\hyperlink{tier_8hpp_a50a003ab1ea342f138c038fabfd1ee55}{Tier} tier)
+\begin{DoxyCompactList}\small\item\em Setter ustawia poziom. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Building_a936de4be97a21d6b94fd5cddaab65ada}\label{classmodel_1_1Building_a936de4be97a21d6b94fd5cddaab65ada}} 
+\hyperlink{tier_8hpp_a50a003ab1ea342f138c038fabfd1ee55}{Tier} \hyperlink{classmodel_1_1Building_a936de4be97a21d6b94fd5cddaab65ada}{get\+\_\+tier} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca poziom. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Building_afd19261eed95d8568da5134ac62b9e1f}\label{classmodel_1_1Building_afd19261eed95d8568da5134ac62b9e1f}} 
+\hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status} \hyperlink{classmodel_1_1Building_afd19261eed95d8568da5134ac62b9e1f}{get\+\_\+status} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{classmodel_1_1Building}{Building}. 
+
+Klasa budynku w rozumieniu bota, będąca obiektem gry, więc publicznie dziedzicząca po klasie \hyperlink{classmodel_1_1GameObject}{Game\+Object}. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classmodel_1_1Building_a17a7270e4283374db400aff509e59f27}\label{classmodel_1_1Building_a17a7270e4283374db400aff509e59f27}} 
+\index{model\+::\+Building@{model\+::\+Building}!Building@{Building}}
+\index{Building@{Building}!model\+::\+Building@{model\+::\+Building}}
+\subsubsection{\texorpdfstring{Building()}{Building()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily model\+::\+Building\+::\+Building (\begin{DoxyParamCaption}\item[{\hyperlink{tier_8hpp_a50a003ab1ea342f138c038fabfd1ee55}{Tier}}]{tier,  }\item[{\hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status}}]{status,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tier} & poziom budynku. \\
+\hline
+{\em status} & status budynku. \\
+\hline
+{\em x} & współrzędna x. \\
+\hline
+{\em y} & współrzędna y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1Building_af8f2ee9d61a38ca85c6d035b8a1090e7}\label{classmodel_1_1Building_af8f2ee9d61a38ca85c6d035b8a1090e7}} 
+\index{model\+::\+Building@{model\+::\+Building}!Building@{Building}}
+\index{Building@{Building}!model\+::\+Building@{model\+::\+Building}}
+\subsubsection{\texorpdfstring{Building()}{Building()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily model\+::\+Building\+::\+Building (\begin{DoxyParamCaption}\item[{int}]{tier = {\ttfamily 0},  }\item[{int}]{status = {\ttfamily 0},  }\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor domyślny z parametrami integerowymi, konwertujący tier i status do enumeracji. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tier} & poziom budynku. \\
+\hline
+{\em status} & status budynku. \\
+\hline
+{\em x} & współrzędna x. \\
+\hline
+{\em y} & współrzędna y. \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+/home/bartlomiej/eclipse-\/workspace/lab\+\_\+3/src/bot/model/\hyperlink{building_8hpp}{building.\+hpp}\end{DoxyCompactItemize}

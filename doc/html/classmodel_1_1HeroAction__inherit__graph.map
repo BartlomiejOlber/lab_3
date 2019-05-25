@@ -1,0 +1,7 @@
+<map id="model::HeroAction" name="model::HeroAction">
+<area shape="rect" id="node3" href="$classmodel_1_1EnterAction.html" title="Klasa EnterAction. " alt="" coords="5,155,139,181"/>
+<area shape="rect" id="node4" href="$classmodel_1_1FightAction.html" title="Klasa FightAction. " alt="" coords="163,155,293,181"/>
+<area shape="rect" id="node5" href="$classmodel_1_1PickUpAction.html" title="Klasa PickUpAction. " alt="" coords="318,155,463,181"/>
+<area shape="rect" id="node6" href="$classmodel_1_1TravelToAction.html" title="Klasa TravelToAction. " alt="" coords="487,155,641,181"/>
+<area shape="rect" id="node2" href="$classmodel_1_1Action.html" title="Klasa Action. " alt="" coords="258,5,361,32"/>
+</map>

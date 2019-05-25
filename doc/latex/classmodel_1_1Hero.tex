@@ -1,0 +1,149 @@
+\hypertarget{classmodel_1_1Hero}{}\section{Dokumentacja klasy model\+:\+:Hero}
+\label{classmodel_1_1Hero}\index{model\+::\+Hero@{model\+::\+Hero}}
+
+
+Klasa \hyperlink{classmodel_1_1Hero}{Hero}.  
+
+
+
+
+{\ttfamily \#include $<$hero.\+hpp$>$}
+
+
+
+Diagram dziedziczenia dla model\+:\+:Hero\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classmodel_1_1Hero__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla model\+:\+:Hero\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classmodel_1_1Hero__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1Hero_aeff27a625ef4629d57d2dba7497eb559}{Hero} (int gold=0, int level=0, int high\+\_\+tier\+\_\+army\+\_\+num=0, int mid\+\_\+tier\+\_\+army\+\_\+num=0, int low\+\_\+tier\+\_\+army\+\_\+num=0, int x=0, int y=0, \hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status} status=Status\+::\+N\+E\+U\+T\+R\+AL)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor domyślny. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1Hero_a7c6ec503c2c1409ff11daa69c2d46f9a}{Hero} (const std\+::vector$<$ int $>$ \&params, \hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status} status)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_abf940dc4b402b8798571272923741f17}\label{classmodel_1_1Hero_abf940dc4b402b8798571272923741f17}} 
+void \hyperlink{classmodel_1_1Hero_abf940dc4b402b8798571272923741f17}{travel\+\_\+to} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Funkcja podróżuj do; ustawia współrzędne bohatera zgodnie z współrzędnymi celu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_aa1331373ce8cdc72574cf0c1376cdd7b}\label{classmodel_1_1Hero_aa1331373ce8cdc72574cf0c1376cdd7b}} 
+void \hyperlink{classmodel_1_1Hero_aa1331373ce8cdc72574cf0c1376cdd7b}{travel\+\_\+to} (const \hyperlink{classmodel_1_1GameObject}{Game\+Object} \&object)
+\begin{DoxyCompactList}\small\item\em Funkcja podróżuj do; ustawia współrzędne bohatera zgodnie z współrzędnymi celu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a02d55a332f0355fa1a87c65ea87691ff}\label{classmodel_1_1Hero_a02d55a332f0355fa1a87c65ea87691ff}} 
+int \hyperlink{classmodel_1_1Hero_a02d55a332f0355fa1a87c65ea87691ff}{get\+\_\+level} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca poziom bohatera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a90e159c929f4c0b5372cdcdc43bda737}\label{classmodel_1_1Hero_a90e159c929f4c0b5372cdcdc43bda737}} 
+int \hyperlink{classmodel_1_1Hero_a90e159c929f4c0b5372cdcdc43bda737}{get\+\_\+gold} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca ilość złota bohatera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a40675022d006773874a54cc70b0ff84a}\label{classmodel_1_1Hero_a40675022d006773874a54cc70b0ff84a}} 
+void \hyperlink{classmodel_1_1Hero_a40675022d006773874a54cc70b0ff84a}{pick\+\_\+up\+\_\+gold} (int quantity)
+\begin{DoxyCompactList}\small\item\em Funkcja podnieś złoto; dodaje ilość złota w parametrze do jego własnego złota. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a1d0c79ec3789a82172a0d2dd1aa0488a}\label{classmodel_1_1Hero_a1d0c79ec3789a82172a0d2dd1aa0488a}} 
+int \hyperlink{classmodel_1_1Hero_a1d0c79ec3789a82172a0d2dd1aa0488a}{get\+\_\+high\+\_\+tier\+\_\+army\+\_\+quantity} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca liczbę jednostek wysokiego poziomu w armii bohatera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a8828fd7c3ed0b8c1a94ef62022cdce56}\label{classmodel_1_1Hero_a8828fd7c3ed0b8c1a94ef62022cdce56}} 
+int \hyperlink{classmodel_1_1Hero_a8828fd7c3ed0b8c1a94ef62022cdce56}{get\+\_\+mid\+\_\+tier\+\_\+army\+\_\+quantity} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca liczbę jednostek średniego poziomu w armii bohatera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a39aec53f854130463e7346d29e81f568}\label{classmodel_1_1Hero_a39aec53f854130463e7346d29e81f568}} 
+int \hyperlink{classmodel_1_1Hero_a39aec53f854130463e7346d29e81f568}{get\+\_\+low\+\_\+tier\+\_\+army\+\_\+quantity} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca liczbę jednostek niskiego poziomu w armii bohatera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a91f42678133f013bf1a4a98f99f850f9}\label{classmodel_1_1Hero_a91f42678133f013bf1a4a98f99f850f9}} 
+int \hyperlink{classmodel_1_1Hero_a91f42678133f013bf1a4a98f99f850f9}{get\+\_\+movement\+\_\+points} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca ilość punktów ruchu bohatera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a14a9c842962a46c408060370cb8d2617}\label{classmodel_1_1Hero_a14a9c842962a46c408060370cb8d2617}} 
+int \hyperlink{classmodel_1_1Hero_a14a9c842962a46c408060370cb8d2617}{count\+\_\+hero\+\_\+force} () const
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca siłę bohatera; mnoży siłę jego armii przez bonus od jego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a833bfd8bbf60219e9576bdb686a43e66}\label{classmodel_1_1Hero_a833bfd8bbf60219e9576bdb686a43e66}} 
+void \hyperlink{classmodel_1_1Hero_a833bfd8bbf60219e9576bdb686a43e66}{kill} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zabijająca bohatera; ustawia jego status na neutralny. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a3608f4f287ef07c12125c79cea171002}\label{classmodel_1_1Hero_a3608f4f287ef07c12125c79cea171002}} 
+void \hyperlink{classmodel_1_1Hero_a3608f4f287ef07c12125c79cea171002}{kill} (int casualties)
+\begin{DoxyCompactList}\small\item\em Funkcja zabijająca część armii bohatera; zabija proporcjonalnie do poziomu oddziałów. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a65710a95b0aeeb35431e42aad6f5e4df}\label{classmodel_1_1Hero_a65710a95b0aeeb35431e42aad6f5e4df}} 
+bool \hyperlink{classmodel_1_1Hero_a65710a95b0aeeb35431e42aad6f5e4df}{is\+\_\+alive} () const
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartośc logiczą czy bohater żyje czy nie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statyczne atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_ab8a93189dfa42527906e6d66cdfd2eef}\label{classmodel_1_1Hero_ab8a93189dfa42527906e6d66cdfd2eef}} 
+static const int \hyperlink{classmodel_1_1Hero_ab8a93189dfa42527906e6d66cdfd2eef}{M\+O\+V\+E\+M\+E\+N\+T\+\_\+\+P\+O\+I\+N\+TS} = 5
+\begin{DoxyCompactList}\small\item\em Statyczna stała; punkty ruchu bohatera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a24257807504890a7d302f7f2a4c66298}\label{classmodel_1_1Hero_a24257807504890a7d302f7f2a4c66298}} 
+static constexpr double \hyperlink{classmodel_1_1Hero_a24257807504890a7d302f7f2a4c66298}{M\+O\+V\+E\+M\+E\+N\+T\+\_\+\+P\+O\+I\+N\+T\+S\+\_\+\+L\+E\+V\+E\+L\+\_\+\+B\+O\+N\+US} = 0.\+4
+\begin{DoxyCompactList}\small\item\em Statyczna stała; bonus do punktów ruchu od poziomu bohatera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_a2d17ca3068a51a516a7b3782da536366}\label{classmodel_1_1Hero_a2d17ca3068a51a516a7b3782da536366}} 
+static constexpr double \hyperlink{classmodel_1_1Hero_a2d17ca3068a51a516a7b3782da536366}{A\+R\+M\+Y\+F\+O\+R\+C\+E\+\_\+\+F\+A\+C\+T\+OR} = 0.\+05
+\begin{DoxyCompactList}\small\item\em Statyczna stała; wpółczynnik bonusu do siły armii od poziomu bohatera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Hero_aeb81d3ed857c6f2d0cb3e15ce9931bdd}\label{classmodel_1_1Hero_aeb81d3ed857c6f2d0cb3e15ce9931bdd}} 
+static constexpr double \hyperlink{classmodel_1_1Hero_aeb81d3ed857c6f2d0cb3e15ce9931bdd}{C\+A\+S\+U\+A\+L\+T\+I\+E\+S\+\_\+\+F\+A\+C\+T\+OR} = 0.\+33
+\begin{DoxyCompactList}\small\item\em Statyczna stała; współczynnik strat w walce oddziałów bohatera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{classmodel_1_1Hero}{Hero}. 
+
+Klasa bohatera w rozumieniu bota, będąca obiektem gry, więc publicznie dziedzicząca po klasie \hyperlink{classmodel_1_1GameObject}{Game\+Object}. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classmodel_1_1Hero_aeff27a625ef4629d57d2dba7497eb559}\label{classmodel_1_1Hero_aeff27a625ef4629d57d2dba7497eb559}} 
+\index{model\+::\+Hero@{model\+::\+Hero}!Hero@{Hero}}
+\index{Hero@{Hero}!model\+::\+Hero@{model\+::\+Hero}}
+\subsubsection{\texorpdfstring{Hero()}{Hero()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily model\+::\+Hero\+::\+Hero (\begin{DoxyParamCaption}\item[{int}]{gold = {\ttfamily 0},  }\item[{int}]{level = {\ttfamily 0},  }\item[{int}]{high\+\_\+tier\+\_\+army\+\_\+num = {\ttfamily 0},  }\item[{int}]{mid\+\_\+tier\+\_\+army\+\_\+num = {\ttfamily 0},  }\item[{int}]{low\+\_\+tier\+\_\+army\+\_\+num = {\ttfamily 0},  }\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0},  }\item[{\hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status}}]{status = {\ttfamily Status\+:\+:NEUTRAL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor domyślny. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em gold} & ilość złota bohatera. \\
+\hline
+{\em level} & numer poziomu boharera. \\
+\hline
+{\em high\+\_\+tier\+\_\+army\+\_\+num} & liczba jednostek wysokiego poziomu w armii bohatera. \\
+\hline
+{\em mid\+\_\+tier\+\_\+army\+\_\+num} & liczba jednostek średniego poziomu w armii bohatera. \\
+\hline
+{\em low\+\_\+tier\+\_\+army\+\_\+num} & liczba jednostek niskiego poziomu w armii bohatera. \\
+\hline
+{\em status} & status bohatera. \\
+\hline
+{\em x} & współrzędna x. \\
+\hline
+{\em y} & współrzędna y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1Hero_a7c6ec503c2c1409ff11daa69c2d46f9a}\label{classmodel_1_1Hero_a7c6ec503c2c1409ff11daa69c2d46f9a}} 
+\index{model\+::\+Hero@{model\+::\+Hero}!Hero@{Hero}}
+\index{Hero@{Hero}!model\+::\+Hero@{model\+::\+Hero}}
+\subsubsection{\texorpdfstring{Hero()}{Hero()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily model\+::\+Hero\+::\+Hero (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{params,  }\item[{\hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status}}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em params} & wektor parametrów integerowych. \\
+\hline
+{\em status} & status bohatera. \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+/home/bartlomiej/eclipse-\/workspace/lab\+\_\+3/src/bot/model/\hyperlink{hero_8hpp}{hero.\+hpp}\end{DoxyCompactItemize}

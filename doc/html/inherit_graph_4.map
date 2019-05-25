@@ -1,0 +1,10 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$classmodel_1_1GameObject.html" title="Klasa GameObject. " alt="" coords="5,132,144,159"/>
+<area shape="rect" id="node2" href="$classmodel_1_1Army.html" title="Klasa Army. " alt="" coords="199,5,295,32"/>
+<area shape="rect" id="node3" href="$classmodel_1_1Building.html" title="Klasa Building. " alt="" coords="192,56,303,83"/>
+<area shape="rect" id="node5" href="$classmodel_1_1Castle.html" title="Klasa Castle. " alt="" coords="196,107,299,133"/>
+<area shape="rect" id="node6" href="$classmodel_1_1Gold.html" title="Klasa Gold. " alt="" coords="201,157,293,184"/>
+<area shape="rect" id="node7" href="$classmodel_1_1Hero.html" title="Klasa Hero. " alt="" coords="201,208,294,235"/>
+<area shape="rect" id="node8" href="$classmodel_1_1Troop.html" title="Klasa Troop. " alt="" coords="198,259,297,285"/>
+<area shape="rect" id="node4" href="$classmodel_1_1GuardedBuilding.html" title="Klasa GuardedBuilding. " alt="" coords="351,56,511,83"/>
+</map>

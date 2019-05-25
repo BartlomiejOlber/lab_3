@@ -1,0 +1,14 @@
+<map id="/home/bartlomiej/eclipse&#45;workspace/lab_3/src/bot/brain.hpp" name="/home/bartlomiej/eclipse&#45;workspace/lab_3/src/bot/brain.hpp">
+<area shape="rect" id="node2" href="$game__state_8hpp.html" title="Moduł klasy GameState. " alt="" coords="202,109,357,136"/>
+<area shape="rect" id="node16" href="$action_8hpp.html" title="Moduł klasy Action. " alt="" coords="493,184,615,211"/>
+<area shape="rect" id="node3" href="$hero_8hpp.html" title="Moduł klasy Hero. " alt="" coords="111,184,183,211"/>
+<area shape="rect" id="node11" href="$castle_8hpp.html" title="Moduł klasy Castle. " alt="" coords="375,184,458,211"/>
+<area shape="rect" id="node14" href="$guarded__building_8hpp.html" title="Moduł klasy GuardedBuilding. " alt="" coords="207,184,351,211"/>
+<area shape="rect" id="node15" href="$gold_8hpp.html" title="Moduł klasy Gold. " alt="" coords="5,333,76,360"/>
+<area shape="rect" id="node4" href="$army_8hpp.html" title="Moduł klasy Army. " alt="" coords="128,259,204,285"/>
+<area shape="rect" id="node10" href="$status_8hpp.html" title="Moduł klasy enumeracyjnej Status i klasy konwertera StatusConverter. " alt="" coords="201,333,283,360"/>
+<area shape="rect" id="node5" href="$troop_8hpp.html" title="Moduł klasy Troop. " alt="" coords="100,333,176,360"/>
+<area shape="rect" id="node7" href="$tier_8hpp.html" title="Moduł klasy enumeracyjnej Tier i klasy konwertera TierConverter. " alt="" coords="47,408,112,435"/>
+<area shape="rect" id="node8" href="$game__object_8hpp.html" title="Moduł klasy GameObject. " alt="" coords="136,408,257,435"/>
+<area shape="rect" id="node13" href="$building_8hpp.html" title="Moduł klasy Building. " alt="" coords="279,259,370,285"/>
+</map>

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROI projekt 3: Plik źródłowy /home/bartlomiej/eclipse-workspace/lab_3/src/bot/model/troop.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROI projekt 3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_29d667bb07f05bb7400afdc76794b290.html">bot</a></li><li class="navelem"><a class="el" href="dir_2a7267a0d10f160b8faa1b1819504b5f.html">model</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">troop.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="troop_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef BOT_MODEL_TROOP_HPP_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define BOT_MODEL_TROOP_HPP_</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tier_8hpp.html">tier.hpp</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="game__object_8hpp.html">game_object.hpp</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemodel.html">model</a> {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classmodel_1_1Troop.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmodel_1_1Troop.html">Troop</a> : <span class="keyword">public</span> <a class="code" href="classmodel_1_1GameObject.html">GameObject</a> {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classmodel_1_1Troop.html#a8907a194f9d0b991d2dfe43dd6136984">   25</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classmodel_1_1Troop.html#a8907a194f9d0b991d2dfe43dd6136984">HIGH_TIER_FACTOR</a> = 50;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classmodel_1_1Troop.html#aedb0cd6437982a339cce8c8918d99650">   27</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classmodel_1_1Troop.html#aedb0cd6437982a339cce8c8918d99650">MID_TIER_FACTOR</a> = 10;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="tier_8hpp.html#a50a003ab1ea342f138c038fabfd1ee55">Tier</a> tier_;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> quantity_;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classmodel_1_1Troop.html#a9aa71eb10b8f3493f65dccd3d63cd7fa">   43</a></span>&#160;    <a class="code" href="classmodel_1_1Troop.html#a9aa71eb10b8f3493f65dccd3d63cd7fa">Troop</a>( <span class="keywordtype">int</span> quantity, <a class="code" href="tier_8hpp.html#a50a003ab1ea342f138c038fabfd1ee55">Tier</a> tier, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y ) : <a class="code" href="classmodel_1_1GameObject.html">GameObject</a>( x, y ), tier_( tier ), quantity_( quantity ) {}</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmodel_1_1Troop.html#a8d7d76671d2cb6ffbd925bd91a1b4f24">   51</a></span>&#160;    <a class="code" href="classmodel_1_1Troop.html#a8d7d76671d2cb6ffbd925bd91a1b4f24">Troop</a>( <span class="keywordtype">int</span> quantity = 0, <span class="keywordtype">int</span> tier = 0, <span class="keywordtype">int</span> x = 0, <span class="keywordtype">int</span> y = 0 ) : <a class="code" href="classmodel_1_1GameObject.html">GameObject</a>( x, y ), tier_( <a class="code" href="classmodel_1_1TierConverter.html">TierConverter</a>::from_int( tier) ),</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            quantity_( quantity ) {}</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classmodel_1_1Troop.html#a8cbe812e8dd34a14458edca42d46a9c9">   54</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classmodel_1_1Troop.html#a8cbe812e8dd34a14458edca42d46a9c9">get_quantity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> quantity_; }</div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classmodel_1_1Troop.html#afa9b13ca99af4fb5a279a01e0e2a4a7e">   56</a></span>&#160;    <a class="code" href="tier_8hpp.html#a50a003ab1ea342f138c038fabfd1ee55">Tier</a> <a class="code" href="classmodel_1_1Troop.html#afa9b13ca99af4fb5a279a01e0e2a4a7e">get_tier</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> tier_; }</div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classmodel_1_1Troop.html#adbec03b9cb80420608e630658bca2634">   58</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmodel_1_1Troop.html#adbec03b9cb80420608e630658bca2634">recruit</a>( <span class="keywordtype">int</span> quantity ){ quantity_ += quantity; }</div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classmodel_1_1Troop.html#acba780ecf29542ec3f19c6090f3874d7">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmodel_1_1Troop.html#acba780ecf29542ec3f19c6090f3874d7">kill</a>( <span class="keywordtype">int</span> quantity ){ quantity &gt;= quantity_ ? quantity_ = 0 : quantity_ -= quantity; }</div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classmodel_1_1Troop.html#a1d833a9c24e879a224b84f927671b0f0">   62</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmodel_1_1Troop.html#a1d833a9c24e879a224b84f927671b0f0">vanish</a>(){ quantity_ = 0;}</div><div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmodel_1_1Troop.html#a5984aee38cb0b8982c28be8f099169db">   64</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classmodel_1_1Troop.html#a5984aee38cb0b8982c28be8f099169db">count_troop_force</a>()<span class="keyword"> const </span>{ <span class="keywordflow">if</span>( tier_ == Tier::HIGH ) <span class="keywordflow">return</span> quantity_ * <a class="code" href="classmodel_1_1Troop.html#a8907a194f9d0b991d2dfe43dd6136984">HIGH_TIER_FACTOR</a>;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span>( tier_ == Tier::MEDIUM ) <span class="keywordflow">return</span> quantity_ * <a class="code" href="classmodel_1_1Troop.html#aedb0cd6437982a339cce8c8918d99650">MID_TIER_FACTOR</a>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> quantity_;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div><div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="troop_8hpp.html#a98a8449fdd332f3100611e4f42735f26">   70</a></span>&#160;<span class="keyword">typedef</span> std::vector&lt;Troop&gt; <a class="code" href="troop_8hpp.html#a98a8449fdd332f3100611e4f42735f26">TroopContainer</a>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}<span class="comment">//end namespace</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BOT_MODEL_TROOP_HPP_ */</span><span class="preprocessor"></span></div><div class="ttc" id="classmodel_1_1Troop_html_a5984aee38cb0b8982c28be8f099169db"><div class="ttname"><a href="classmodel_1_1Troop.html#a5984aee38cb0b8982c28be8f099169db">model::Troop::count_troop_force</a></div><div class="ttdeci">int count_troop_force() const</div><div class="ttdoc">Funkcja obliczająca siłę oddziału; mnoży jego liczebność przez współczynnik poziomu jednostek...</div><div class="ttdef"><b>Definition:</b> troop.hpp:64</div></div>
+<div class="ttc" id="namespacemodel_html"><div class="ttname"><a href="namespacemodel.html">model</a></div><div class="ttdef"><b>Definition:</b> action.hpp:17</div></div>
+<div class="ttc" id="classmodel_1_1GameObject_html"><div class="ttname"><a href="classmodel_1_1GameObject.html">model::GameObject</a></div><div class="ttdoc">Klasa GameObject. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:19</div></div>
+<div class="ttc" id="classmodel_1_1Troop_html_a8d7d76671d2cb6ffbd925bd91a1b4f24"><div class="ttname"><a href="classmodel_1_1Troop.html#a8d7d76671d2cb6ffbd925bd91a1b4f24">model::Troop::Troop</a></div><div class="ttdeci">Troop(int quantity=0, int tier=0, int x=0, int y=0)</div><div class="ttdoc">Publiczny konstruktor domyślny. </div><div class="ttdef"><b>Definition:</b> troop.hpp:51</div></div>
+<div class="ttc" id="classmodel_1_1Troop_html_a9aa71eb10b8f3493f65dccd3d63cd7fa"><div class="ttname"><a href="classmodel_1_1Troop.html#a9aa71eb10b8f3493f65dccd3d63cd7fa">model::Troop::Troop</a></div><div class="ttdeci">Troop(int quantity, Tier tier, int x, int y)</div><div class="ttdoc">Publiczny konstruktor. </div><div class="ttdef"><b>Definition:</b> troop.hpp:43</div></div>
+<div class="ttc" id="classmodel_1_1Troop_html_afa9b13ca99af4fb5a279a01e0e2a4a7e"><div class="ttname"><a href="classmodel_1_1Troop.html#afa9b13ca99af4fb5a279a01e0e2a4a7e">model::Troop::get_tier</a></div><div class="ttdeci">Tier get_tier() const</div><div class="ttdoc">Getter zwraca poziom oddziału. </div><div class="ttdef"><b>Definition:</b> troop.hpp:56</div></div>
+<div class="ttc" id="classmodel_1_1Troop_html_a1d833a9c24e879a224b84f927671b0f0"><div class="ttname"><a href="classmodel_1_1Troop.html#a1d833a9c24e879a224b84f927671b0f0">model::Troop::vanish</a></div><div class="ttdeci">void vanish()</div><div class="ttdoc">Funkcja zabij wszystkich; ustawia liczebność oddziału na zero. </div><div class="ttdef"><b>Definition:</b> troop.hpp:62</div></div>
+<div class="ttc" id="classmodel_1_1Troop_html_a8907a194f9d0b991d2dfe43dd6136984"><div class="ttname"><a href="classmodel_1_1Troop.html#a8907a194f9d0b991d2dfe43dd6136984">model::Troop::HIGH_TIER_FACTOR</a></div><div class="ttdeci">static const int HIGH_TIER_FACTOR</div><div class="ttdoc">Statyczna stała; współczynnik mocy jednostki wysokiego poziomu. </div><div class="ttdef"><b>Definition:</b> troop.hpp:25</div></div>
+<div class="ttc" id="classmodel_1_1Troop_html"><div class="ttname"><a href="classmodel_1_1Troop.html">model::Troop</a></div><div class="ttdoc">Klasa Troop. </div><div class="ttdef"><b>Definition:</b> troop.hpp:21</div></div>
+<div class="ttc" id="classmodel_1_1Troop_html_aedb0cd6437982a339cce8c8918d99650"><div class="ttname"><a href="classmodel_1_1Troop.html#aedb0cd6437982a339cce8c8918d99650">model::Troop::MID_TIER_FACTOR</a></div><div class="ttdeci">static const int MID_TIER_FACTOR</div><div class="ttdoc">Statyczna stała; współczynnik mocy jednostki średniego poziomu. </div><div class="ttdef"><b>Definition:</b> troop.hpp:27</div></div>
+<div class="ttc" id="tier_8hpp_html_a50a003ab1ea342f138c038fabfd1ee55"><div class="ttname"><a href="tier_8hpp.html#a50a003ab1ea342f138c038fabfd1ee55">model::Tier</a></div><div class="ttdeci">Tier</div><div class="ttdoc">Klasa enumeracyjna Tier. </div><div class="ttdef"><b>Definition:</b> tier.hpp:17</div></div>
+<div class="ttc" id="troop_8hpp_html_a98a8449fdd332f3100611e4f42735f26"><div class="ttname"><a href="troop_8hpp.html#a98a8449fdd332f3100611e4f42735f26">model::TroopContainer</a></div><div class="ttdeci">std::vector&lt; Troop &gt; TroopContainer</div><div class="ttdoc">Wektor oddziałów. </div><div class="ttdef"><b>Definition:</b> troop.hpp:70</div></div>
+<div class="ttc" id="classmodel_1_1TierConverter_html"><div class="ttname"><a href="classmodel_1_1TierConverter.html">model::TierConverter</a></div><div class="ttdoc">Klasa TierConverter. </div><div class="ttdef"><b>Definition:</b> tier.hpp:26</div></div>
+<div class="ttc" id="game__object_8hpp_html"><div class="ttname"><a href="game__object_8hpp.html">game_object.hpp</a></div><div class="ttdoc">Moduł klasy GameObject. </div></div>
+<div class="ttc" id="classmodel_1_1Troop_html_a8cbe812e8dd34a14458edca42d46a9c9"><div class="ttname"><a href="classmodel_1_1Troop.html#a8cbe812e8dd34a14458edca42d46a9c9">model::Troop::get_quantity</a></div><div class="ttdeci">int get_quantity() const</div><div class="ttdoc">Getter zwraca liczebnośc oddziału. </div><div class="ttdef"><b>Definition:</b> troop.hpp:54</div></div>
+<div class="ttc" id="tier_8hpp_html"><div class="ttname"><a href="tier_8hpp.html">tier.hpp</a></div><div class="ttdoc">Moduł klasy enumeracyjnej Tier i klasy konwertera TierConverter. </div></div>
+<div class="ttc" id="classmodel_1_1Troop_html_adbec03b9cb80420608e630658bca2634"><div class="ttname"><a href="classmodel_1_1Troop.html#adbec03b9cb80420608e630658bca2634">model::Troop::recruit</a></div><div class="ttdeci">void recruit(int quantity)</div><div class="ttdoc">Funkcja rekrutuj; zwiększa liczbę jednostek oddziału o dany parametr. </div><div class="ttdef"><b>Definition:</b> troop.hpp:58</div></div>
+<div class="ttc" id="classmodel_1_1Troop_html_acba780ecf29542ec3f19c6090f3874d7"><div class="ttname"><a href="classmodel_1_1Troop.html#acba780ecf29542ec3f19c6090f3874d7">model::Troop::kill</a></div><div class="ttdeci">void kill(int quantity)</div><div class="ttdoc">Funkcja zabij odejmuje zadaną liczbę jednostek z oddziału. </div><div class="ttdef"><b>Definition:</b> troop.hpp:60</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

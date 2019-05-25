@@ -1,0 +1,14 @@
+<map id="model::Action" name="model::Action">
+<area shape="rect" id="node2" href="$classmodel_1_1CastleAction.html" title="Klasa CastleAction. " alt="" coords="156,157,296,184"/>
+<area shape="rect" id="node9" href="$classmodel_1_1HeroAction.html" title="Klasa HeroAction. " alt="" coords="161,360,291,387"/>
+<area shape="rect" id="node3" href="$classmodel_1_1BuildHighTierAction.html" title="Klasa BuildHighTierAction. " alt="" coords="351,5,531,32"/>
+<area shape="rect" id="node4" href="$classmodel_1_1BuildLowTierAction.html" title="Klasa BuildLowTierAction. " alt="" coords="352,56,529,83"/>
+<area shape="rect" id="node5" href="$classmodel_1_1BuildMidTierAction.html" title="Klasa BuildMidTierAction. " alt="" coords="353,107,528,133"/>
+<area shape="rect" id="node6" href="$classmodel_1_1RecruitHighTierAction.html" title="Klasa RecruitHighTierAction. " alt="" coords="344,157,537,184"/>
+<area shape="rect" id="node7" href="$classmodel_1_1RecruitLowTierAction.html" title="Klasa RecruitLowTierAction. " alt="" coords="345,208,536,235"/>
+<area shape="rect" id="node8" href="$classmodel_1_1RecruitMidTierAction.html" title="Klasa RecruitMidTierAction. " alt="" coords="347,259,534,285"/>
+<area shape="rect" id="node10" href="$classmodel_1_1EnterAction.html" title="Klasa EnterAction. " alt="" coords="374,309,507,336"/>
+<area shape="rect" id="node11" href="$classmodel_1_1FightAction.html" title="Klasa FightAction. " alt="" coords="375,360,506,387"/>
+<area shape="rect" id="node12" href="$classmodel_1_1PickUpAction.html" title="Klasa PickUpAction. " alt="" coords="368,411,513,437"/>
+<area shape="rect" id="node13" href="$classmodel_1_1TravelToAction.html" title="Klasa TravelToAction. " alt="" coords="364,461,517,488"/>
+</map>

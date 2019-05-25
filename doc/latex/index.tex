@@ -1,0 +1,38 @@
+\begin{DoxyAuthor}{Autor}
+Bartłomiej Olber
+\end{DoxyAuthor}
+Gra w życie (Life, The game of life) – jeden z pierwszych i najbardziej znanych przykładów automatu komórkowego, wymyślony w roku 1970 przez brytyjskiego matematyka Johna Conwaya.
+
+Gra toczy się na nieskończonej planszy (płaszczyźnie) podzielonej na kwadratowe komórki. Każda komórka ma ośmiu „sąsiadów” (tzw.\+sąsiedztwo Moore’a), czyli komórki przylegające do niej bokami i rogami. Każda komórka może znajdować się w jednym z dwóch stanów\+: może być albo „żywa” (wartość 1), albo „martwa” (wartość 0). Stany komórek zmieniają się w pewnych jednostkach czasu. Stan wszystkich komórek w pewnej jednostce czasu jest używany do obliczenia stanu wszystkich komórek w następnej jednostce. Po obliczeniu wszystkie komórki zmieniają swój stan dokładnie w tym samym momencie. Stan komórki zależy tylko od liczby jej żywych sąsiadów. W grze w życie nie ma graczy w dosłownym tego słowa znaczeniu. Udział człowieka sprowadza się jedynie do ustalenia stanu początkowego komórek.
+
+{\bfseries Reguły gry według Conwaya} \begin{DoxyVerb}Martwa komórka, która ma dokładnie 3 żywych sąsiadów, staje się żywa 
+w następnej jednostce czasu (rodzi się).
+Żywa komórka z 2 albo 3 żywymi sąsiadami pozostaje nadal żywa; 
+przy innej liczbie sąsiadów umiera (z „samotności” albo „zatłoczenia”).
+\end{DoxyVerb}
+
+
+{\bfseries Algorytmy programu}
+
+
+
+{\bfseries Opcje programu} \begin{DoxyVerb}F1  Wyjdź z programu
+F2  Wyświetl menu opcji użytkownika 
+     - Ustaw żywe komórki na planszy
+     - Ustaw maksymalną liczbę iteracji
+     - Ustaw opóźnienie pomiędzy iteracjami
+     - Ustaw rozmiary planszy 
+     - Wylosuj stan planszy
+F3  Zatrzymaj grę
+F4  Strórz nową planszę
+F9  Rozpocznij grę   
+\end{DoxyVerb}
+
+
+{\bfseries Analiza pliku wejściowego}
+
+Do analizy pliku wejściowego typu J\+S\+ON została użyta biblioteka Y\+A\+JL.
+
+Oto przykład poprawnego pliku parametrów typu J\+S\+ON
+
+ 

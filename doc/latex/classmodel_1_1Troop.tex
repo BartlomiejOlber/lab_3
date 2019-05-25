@@ -1,0 +1,118 @@
+\hypertarget{classmodel_1_1Troop}{}\section{Dokumentacja klasy model\+:\+:Troop}
+\label{classmodel_1_1Troop}\index{model\+::\+Troop@{model\+::\+Troop}}
+
+
+Klasa \hyperlink{classmodel_1_1Troop}{Troop}.  
+
+
+
+
+{\ttfamily \#include $<$troop.\+hpp$>$}
+
+
+
+Diagram dziedziczenia dla model\+:\+:Troop\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classmodel_1_1Troop__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla model\+:\+:Troop\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classmodel_1_1Troop__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1Troop_a9aa71eb10b8f3493f65dccd3d63cd7fa}{Troop} (int quantity, \hyperlink{tier_8hpp_a50a003ab1ea342f138c038fabfd1ee55}{Tier} tier, int x, int y)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1Troop_a8d7d76671d2cb6ffbd925bd91a1b4f24}{Troop} (int quantity=0, int tier=0, int x=0, int y=0)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor domyślny. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Troop_a8cbe812e8dd34a14458edca42d46a9c9}\label{classmodel_1_1Troop_a8cbe812e8dd34a14458edca42d46a9c9}} 
+int \hyperlink{classmodel_1_1Troop_a8cbe812e8dd34a14458edca42d46a9c9}{get\+\_\+quantity} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca liczebnośc oddziału. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Troop_afa9b13ca99af4fb5a279a01e0e2a4a7e}\label{classmodel_1_1Troop_afa9b13ca99af4fb5a279a01e0e2a4a7e}} 
+\hyperlink{tier_8hpp_a50a003ab1ea342f138c038fabfd1ee55}{Tier} \hyperlink{classmodel_1_1Troop_afa9b13ca99af4fb5a279a01e0e2a4a7e}{get\+\_\+tier} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca poziom oddziału. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Troop_adbec03b9cb80420608e630658bca2634}\label{classmodel_1_1Troop_adbec03b9cb80420608e630658bca2634}} 
+void \hyperlink{classmodel_1_1Troop_adbec03b9cb80420608e630658bca2634}{recruit} (int quantity)
+\begin{DoxyCompactList}\small\item\em Funkcja rekrutuj; zwiększa liczbę jednostek oddziału o dany parametr. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Troop_acba780ecf29542ec3f19c6090f3874d7}\label{classmodel_1_1Troop_acba780ecf29542ec3f19c6090f3874d7}} 
+void \hyperlink{classmodel_1_1Troop_acba780ecf29542ec3f19c6090f3874d7}{kill} (int quantity)
+\begin{DoxyCompactList}\small\item\em Funkcja zabij odejmuje zadaną liczbę jednostek z oddziału. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Troop_a1d833a9c24e879a224b84f927671b0f0}\label{classmodel_1_1Troop_a1d833a9c24e879a224b84f927671b0f0}} 
+void \hyperlink{classmodel_1_1Troop_a1d833a9c24e879a224b84f927671b0f0}{vanish} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zabij wszystkich; ustawia liczebność oddziału na zero. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Troop_a5984aee38cb0b8982c28be8f099169db}\label{classmodel_1_1Troop_a5984aee38cb0b8982c28be8f099169db}} 
+int \hyperlink{classmodel_1_1Troop_a5984aee38cb0b8982c28be8f099169db}{count\+\_\+troop\+\_\+force} () const
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca siłę oddziału; mnoży jego liczebność przez współczynnik poziomu jednostek. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statyczne atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Troop_a8907a194f9d0b991d2dfe43dd6136984}\label{classmodel_1_1Troop_a8907a194f9d0b991d2dfe43dd6136984}} 
+static const int \hyperlink{classmodel_1_1Troop_a8907a194f9d0b991d2dfe43dd6136984}{H\+I\+G\+H\+\_\+\+T\+I\+E\+R\+\_\+\+F\+A\+C\+T\+OR} = 50
+\begin{DoxyCompactList}\small\item\em Statyczna stała; współczynnik mocy jednostki wysokiego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Troop_aedb0cd6437982a339cce8c8918d99650}\label{classmodel_1_1Troop_aedb0cd6437982a339cce8c8918d99650}} 
+static const int \hyperlink{classmodel_1_1Troop_aedb0cd6437982a339cce8c8918d99650}{M\+I\+D\+\_\+\+T\+I\+E\+R\+\_\+\+F\+A\+C\+T\+OR} = 10
+\begin{DoxyCompactList}\small\item\em Statyczna stała; współczynnik mocy jednostki średniego poziomu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{classmodel_1_1Troop}{Troop}. 
+
+Klasa oddziału w rozumieniu bota, będąca obiektem gry, więc publicznie dziedzicząca po klasie \hyperlink{classmodel_1_1GameObject}{Game\+Object}. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classmodel_1_1Troop_a9aa71eb10b8f3493f65dccd3d63cd7fa}\label{classmodel_1_1Troop_a9aa71eb10b8f3493f65dccd3d63cd7fa}} 
+\index{model\+::\+Troop@{model\+::\+Troop}!Troop@{Troop}}
+\index{Troop@{Troop}!model\+::\+Troop@{model\+::\+Troop}}
+\subsubsection{\texorpdfstring{Troop()}{Troop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily model\+::\+Troop\+::\+Troop (\begin{DoxyParamCaption}\item[{int}]{quantity,  }\item[{\hyperlink{tier_8hpp_a50a003ab1ea342f138c038fabfd1ee55}{Tier}}]{tier,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em quantity} & liczebność oddziału. \\
+\hline
+{\em tier} & poziom oddziału klasy enumeracyjnej Tier. \\
+\hline
+{\em x} & współrzędna x. \\
+\hline
+{\em y} & współrzędna y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1Troop_a8d7d76671d2cb6ffbd925bd91a1b4f24}\label{classmodel_1_1Troop_a8d7d76671d2cb6ffbd925bd91a1b4f24}} 
+\index{model\+::\+Troop@{model\+::\+Troop}!Troop@{Troop}}
+\index{Troop@{Troop}!model\+::\+Troop@{model\+::\+Troop}}
+\subsubsection{\texorpdfstring{Troop()}{Troop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily model\+::\+Troop\+::\+Troop (\begin{DoxyParamCaption}\item[{int}]{quantity = {\ttfamily 0},  }\item[{int}]{tier = {\ttfamily 0},  }\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor domyślny. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em quantity} & liczebność oddziału. \\
+\hline
+{\em tier} & poziom oddziału konwetrowany do klasy enumeracyjnej Tier. \\
+\hline
+{\em x} & współrzędna x. \\
+\hline
+{\em y} & współrzędna y. \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+/home/bartlomiej/eclipse-\/workspace/lab\+\_\+3/src/bot/model/\hyperlink{troop_8hpp}{troop.\+hpp}\end{DoxyCompactItemize}

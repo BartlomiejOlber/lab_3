@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROI projekt 3: Gra w życie</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROI projekt 3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Gra w życie </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Bartłomiej Olber</dd></dl>
+<p>Gra w życie (Life, The game of life) – jeden z pierwszych i najbardziej znanych przykładów automatu komórkowego, wymyślony w roku 1970 przez brytyjskiego matematyka Johna Conwaya.</p>
+<p>Gra toczy się na nieskończonej planszy (płaszczyźnie) podzielonej na kwadratowe komórki. Każda komórka ma ośmiu „sąsiadów” (tzw.sąsiedztwo Moore’a), czyli komórki przylegające do niej bokami i rogami. Każda komórka może znajdować się w jednym z dwóch stanów: może być albo „żywa” (wartość 1), albo „martwa” (wartość 0). Stany komórek zmieniają się w pewnych jednostkach czasu. Stan wszystkich komórek w pewnej jednostce czasu jest używany do obliczenia stanu wszystkich komórek w następnej jednostce. Po obliczeniu wszystkie komórki zmieniają swój stan dokładnie w tym samym momencie. Stan komórki zależy tylko od liczby jej żywych sąsiadów. W grze w życie nie ma graczy w dosłownym tego słowa znaczeniu. Udział człowieka sprowadza się jedynie do ustalenia stanu początkowego komórek.</p>
+<p><b>Reguły gry według Conwaya</b> </p><pre class="fragment">Martwa komórka, która ma dokładnie 3 żywych sąsiadów, staje się żywa 
+w następnej jednostce czasu (rodzi się).
+Żywa komórka z 2 albo 3 żywymi sąsiadami pozostaje nadal żywa; 
+przy innej liczbie sąsiadów umiera (z „samotności” albo „zatłoczenia”).
+</pre><p><b>Algorytmy programu</b></p>
+<div class="image">
+<img src="main_alg.png" alt="main_alg.png"/>
+</div>
+<p><b>Opcje programu</b> </p><pre class="fragment">F1  Wyjdź z programu
+F2  Wyświetl menu opcji użytkownika 
+     - Ustaw żywe komórki na planszy
+     - Ustaw maksymalną liczbę iteracji
+     - Ustaw opóźnienie pomiędzy iteracjami
+     - Ustaw rozmiary planszy 
+     - Wylosuj stan planszy
+F3  Zatrzymaj grę
+F4  Strórz nową planszę
+F9  Rozpocznij grę   
+</pre><p><b>Analiza pliku wejściowego</b></p>
+<p>Do analizy pliku wejściowego typu JSON została użyta biblioteka YAJL.</p>
+<p>Oto przykład poprawnego pliku parametrów typu JSON</p>
+<div class="image">
+<img src="json_example.png" alt="json_example.png"/>
+</div>
+ </div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

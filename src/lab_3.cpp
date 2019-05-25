@@ -17,7 +17,7 @@ int main() {
 	bot::ScreenCapture bot_screen_capture;
 	bot_screen_capture.capture_screen( game_state );
 	brain::Brain brain( game_state );
-	cout<<"\nmy hero start x: " << game_state.my_hero_.get_x() << " y: "<< game_state.my_hero_.get_y() << endl;
+	cout<<"\nmy hero start x: " << game_state.my_hero.get_x() << " y: "<< game_state.my_hero.get_y() << endl;
 	brain.play_round( action_scenario );
 	cout << "\n Bot made following decisions: "<< endl;
 	for( auto it = action_scenario.begin(); it != action_scenario.end(); ++it ){

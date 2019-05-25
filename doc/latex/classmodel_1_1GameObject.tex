@@ -1,0 +1,87 @@
+\hypertarget{classmodel_1_1GameObject}{}\section{Dokumentacja klasy model\+:\+:Game\+Object}
+\label{classmodel_1_1GameObject}\index{model\+::\+Game\+Object@{model\+::\+Game\+Object}}
+
+
+Klasa \hyperlink{classmodel_1_1GameObject}{Game\+Object}.  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+object.\+hpp$>$}
+
+
+
+Diagram dziedziczenia dla model\+:\+:Game\+Object\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmodel_1_1GameObject__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1GameObject_aec3d26647ae22d325282e07b4391de0a}{Game\+Object} (int x=0, int y=0)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor domyślny. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1GameObject_add23441faffd638c0cba4950b8555364}{Game\+Object} (const \hyperlink{classmodel_1_1GameObject}{Game\+Object} \&object)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor kopiujący. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1GameObject_a3ed9274eb807ef622cf50ebe6126f297}\label{classmodel_1_1GameObject_a3ed9274eb807ef622cf50ebe6126f297}} 
+void \hyperlink{classmodel_1_1GameObject_a3ed9274eb807ef622cf50ebe6126f297}{set\+\_\+coordinates} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Setter ustawia współrzędne obiektu gry. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1GameObject_a7dd3d6798cbc6182908c8181114c8383}\label{classmodel_1_1GameObject_a7dd3d6798cbc6182908c8181114c8383}} 
+int \hyperlink{classmodel_1_1GameObject_a7dd3d6798cbc6182908c8181114c8383}{get\+\_\+x} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca współrzędną x. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1GameObject_ac883bfccb78ec3e689d1672755bf44f8}\label{classmodel_1_1GameObject_ac883bfccb78ec3e689d1672755bf44f8}} 
+int \hyperlink{classmodel_1_1GameObject_ac883bfccb78ec3e689d1672755bf44f8}{get\+\_\+y} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca współrzędną y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1GameObject_a294f5a3a05529858758edba9f9f02ee3}\label{classmodel_1_1GameObject_a294f5a3a05529858758edba9f9f02ee3}} 
+int \hyperlink{classmodel_1_1GameObject_a294f5a3a05529858758edba9f9f02ee3}{get\+\_\+distance} (const \hyperlink{classmodel_1_1GameObject}{Game\+Object} \&destination) const
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca odległość pomiędzy obiektami; pierwiastek z sumy kwadratów. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1GameObject_acfd1cc777708e9db44f59716db36c486}\label{classmodel_1_1GameObject_acfd1cc777708e9db44f59716db36c486}} 
+virtual \hyperlink{classmodel_1_1GameObject_acfd1cc777708e9db44f59716db36c486}{$\sim$\+Game\+Object} ()
+\begin{DoxyCompactList}\small\item\em Wirtualny destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{classmodel_1_1GameObject}{Game\+Object}. 
+
+Klasa obiektu gry w rozumieniu bota; po niej dziedziczą wszystkie obiekty stanu gry. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classmodel_1_1GameObject_aec3d26647ae22d325282e07b4391de0a}\label{classmodel_1_1GameObject_aec3d26647ae22d325282e07b4391de0a}} 
+\index{model\+::\+Game\+Object@{model\+::\+Game\+Object}!Game\+Object@{Game\+Object}}
+\index{Game\+Object@{Game\+Object}!model\+::\+Game\+Object@{model\+::\+Game\+Object}}
+\subsubsection{\texorpdfstring{Game\+Object()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily model\+::\+Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor domyślny. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & współrzędna x. \\
+\hline
+{\em y} & współrzędna y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1GameObject_add23441faffd638c0cba4950b8555364}\label{classmodel_1_1GameObject_add23441faffd638c0cba4950b8555364}} 
+\index{model\+::\+Game\+Object@{model\+::\+Game\+Object}!Game\+Object@{Game\+Object}}
+\index{Game\+Object@{Game\+Object}!model\+::\+Game\+Object@{model\+::\+Game\+Object}}
+\subsubsection{\texorpdfstring{Game\+Object()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily model\+::\+Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{const \hyperlink{classmodel_1_1GameObject}{Game\+Object} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor kopiujący. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em object} & stała referencja na obiekt klasy \hyperlink{classmodel_1_1GameObject}{Game\+Object} \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+/home/bartlomiej/eclipse-\/workspace/lab\+\_\+3/src/bot/model/\hyperlink{game__object_8hpp}{game\+\_\+object.\+hpp}\end{DoxyCompactItemize}

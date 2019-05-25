@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROI projekt 3: Plik źródłowy /home/bartlomiej/eclipse-workspace/lab_3/src/bot/model/pick_up_action.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROI projekt 3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_29d667bb07f05bb7400afdc76794b290.html">bot</a></li><li class="navelem"><a class="el" href="dir_2a7267a0d10f160b8faa1b1819504b5f.html">model</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">pick_up_action.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pick__up__action_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef BOT_MODEL_PICK_UP_ACTION_HPP_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define BOT_MODEL_PICK_UP_ACTION_HPP_</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="hero__action_8hpp.html">hero_action.hpp</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemodel.html">model</a> {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classmodel_1_1PickUpAction.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmodel_1_1PickUpAction.html">PickUpAction</a> : <span class="keyword">public</span> <a class="code" href="classmodel_1_1HeroAction.html">HeroAction</a> {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classmodel_1_1PickUpAction.html#a7f3953e6ebdfdb1260cd745fa7fc2b8d">   27</a></span>&#160;    <a class="code" href="classmodel_1_1PickUpAction.html#a7f3953e6ebdfdb1260cd745fa7fc2b8d">PickUpAction</a>( <span class="keyword">const</span> <a class="code" href="classmodel_1_1GameObject.html">GameObject</a>&amp; target ) : <a class="code" href="classmodel_1_1HeroAction.html">HeroAction</a>( target ){}</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmodel_1_1PickUpAction.html#a8e3d6499d8eb1f99566e0b5b3e6661c9">   32</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classmodel_1_1PickUpAction.html#a8e3d6499d8eb1f99566e0b5b3e6661c9">print</a>(){  std::cout &lt;&lt; <span class="stringliteral">&quot;my hero pick up in location ( &quot;</span> &lt;&lt; <a class="code" href="classmodel_1_1Action.html#aaa02d0e5308513cd6832c6cd1ac7157f">target_</a>.<a class="code" href="classmodel_1_1GameObject.html#a7dd3d6798cbc6182908c8181114c8383">get_x</a>()&lt;&lt;<span class="stringliteral">&quot;, &quot;</span>&lt;&lt;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classmodel_1_1Action.html#aaa02d0e5308513cd6832c6cd1ac7157f">target_</a>.<a class="code" href="classmodel_1_1GameObject.html#ac883bfccb78ec3e689d1672755bf44f8">get_y</a>()&lt;&lt;<span class="stringliteral">&quot; )&quot;</span>&lt;&lt;std::endl;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BOT_MODEL_PICK_UP_ACTION_HPP_ */</span><span class="preprocessor"></span></div><div class="ttc" id="classmodel_1_1HeroAction_html"><div class="ttname"><a href="classmodel_1_1HeroAction.html">model::HeroAction</a></div><div class="ttdoc">Klasa HeroAction. </div><div class="ttdef"><b>Definition:</b> hero_action.hpp:18</div></div>
+<div class="ttc" id="classmodel_1_1PickUpAction_html"><div class="ttname"><a href="classmodel_1_1PickUpAction.html">model::PickUpAction</a></div><div class="ttdoc">Klasa PickUpAction. </div><div class="ttdef"><b>Definition:</b> pick_up_action.hpp:20</div></div>
+<div class="ttc" id="classmodel_1_1Action_html_aaa02d0e5308513cd6832c6cd1ac7157f"><div class="ttname"><a href="classmodel_1_1Action.html#aaa02d0e5308513cd6832c6cd1ac7157f">model::Action::target_</a></div><div class="ttdeci">GameObject target_</div><div class="ttdoc">Chroniona składowa klasy GameObject. </div><div class="ttdef"><b>Definition:</b> action.hpp:29</div></div>
+<div class="ttc" id="classmodel_1_1GameObject_html_a7dd3d6798cbc6182908c8181114c8383"><div class="ttname"><a href="classmodel_1_1GameObject.html#a7dd3d6798cbc6182908c8181114c8383">model::GameObject::get_x</a></div><div class="ttdeci">int get_x() const</div><div class="ttdoc">Getter zwraca współrzędną x. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:40</div></div>
+<div class="ttc" id="namespacemodel_html"><div class="ttname"><a href="namespacemodel.html">model</a></div><div class="ttdef"><b>Definition:</b> action.hpp:17</div></div>
+<div class="ttc" id="classmodel_1_1GameObject_html"><div class="ttname"><a href="classmodel_1_1GameObject.html">model::GameObject</a></div><div class="ttdoc">Klasa GameObject. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:19</div></div>
+<div class="ttc" id="hero__action_8hpp_html"><div class="ttname"><a href="hero__action_8hpp.html">hero_action.hpp</a></div><div class="ttdoc">Moduł klasy HeroAction. </div></div>
+<div class="ttc" id="classmodel_1_1PickUpAction_html_a7f3953e6ebdfdb1260cd745fa7fc2b8d"><div class="ttname"><a href="classmodel_1_1PickUpAction.html#a7f3953e6ebdfdb1260cd745fa7fc2b8d">model::PickUpAction::PickUpAction</a></div><div class="ttdeci">PickUpAction(const GameObject &amp;target)</div><div class="ttdoc">Publiczny konstruktor z parametrem klasy GameObject. </div><div class="ttdef"><b>Definition:</b> pick_up_action.hpp:27</div></div>
+<div class="ttc" id="classmodel_1_1GameObject_html_ac883bfccb78ec3e689d1672755bf44f8"><div class="ttname"><a href="classmodel_1_1GameObject.html#ac883bfccb78ec3e689d1672755bf44f8">model::GameObject::get_y</a></div><div class="ttdeci">int get_y() const</div><div class="ttdoc">Getter zwraca współrzędną y. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:42</div></div>
+<div class="ttc" id="classmodel_1_1PickUpAction_html_a8e3d6499d8eb1f99566e0b5b3e6661c9"><div class="ttname"><a href="classmodel_1_1PickUpAction.html#a8e3d6499d8eb1f99566e0b5b3e6661c9">model::PickUpAction::print</a></div><div class="ttdeci">virtual void print()</div><div class="ttdoc">Wirtualna metoda print. </div><div class="ttdef"><b>Definition:</b> pick_up_action.hpp:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

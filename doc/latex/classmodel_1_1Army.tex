@@ -1,0 +1,166 @@
+\hypertarget{classmodel_1_1Army}{}\section{Dokumentacja klasy model\+:\+:Army}
+\label{classmodel_1_1Army}\index{model\+::\+Army@{model\+::\+Army}}
+
+
+Klasa \hyperlink{classmodel_1_1Army}{Army}.  
+
+
+
+
+{\ttfamily \#include $<$army.\+hpp$>$}
+
+
+
+Diagram dziedziczenia dla model\+:\+:Army\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classmodel_1_1Army__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla model\+:\+:Army\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classmodel_1_1Army__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1Army_a09146560c4983f1d478cd490cc266333}{Army} (int high\+\_\+tier\+\_\+num, int mid\+\_\+tier\+\_\+num, int low\+\_\+tier\+\_\+num, int x, int y)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor z parametrami integerowymi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Army_a81ae7bf335912170e9330ef27df6a450}\label{classmodel_1_1Army_a81ae7bf335912170e9330ef27df6a450}} 
+int \hyperlink{classmodel_1_1Army_a81ae7bf335912170e9330ef27df6a450}{get\+\_\+high\+\_\+tier\+\_\+quantity} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca liczbę jednostek wysokiego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Army_a6845db50342d69bdcef1a215913fe316}\label{classmodel_1_1Army_a6845db50342d69bdcef1a215913fe316}} 
+int \hyperlink{classmodel_1_1Army_a6845db50342d69bdcef1a215913fe316}{get\+\_\+mid\+\_\+tier\+\_\+quantity} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca liczbę jednostek średniego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Army_a46ee43ae22033531d863801698370944}\label{classmodel_1_1Army_a46ee43ae22033531d863801698370944}} 
+int \hyperlink{classmodel_1_1Army_a46ee43ae22033531d863801698370944}{get\+\_\+low\+\_\+tier\+\_\+quantity} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca liczbę jednostek niskiego poziomu. \end{DoxyCompactList}\item 
+void \hyperlink{classmodel_1_1Army_aad5caea451cef381210253fa32b70089}{recruit\+\_\+high\+\_\+tier} (int quantity)
+\item 
+void \hyperlink{classmodel_1_1Army_a30f4b8e102f400969a86bebbfeb9bbb3}{recruit\+\_\+mid\+\_\+tier} (int quantity)
+\item 
+void \hyperlink{classmodel_1_1Army_a64148705305e62116c2f8feb170a917d}{recruit\+\_\+low\+\_\+tier} (int quantity)
+\item 
+void \hyperlink{classmodel_1_1Army_a4821e64f682c7b07e4e0909b58980509}{kill\+\_\+high\+\_\+tier} (int quantity)
+\item 
+void \hyperlink{classmodel_1_1Army_a25e008794fb0295355658734000f9924}{kill\+\_\+mid\+\_\+tier} (int quantity)
+\item 
+void \hyperlink{classmodel_1_1Army_ae9f218c741bba69fab5ba304a037411b}{kill\+\_\+low\+\_\+tier} (int quantity)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Army_a1cc5910e80ec81d3030895e9315407d1}\label{classmodel_1_1Army_a1cc5910e80ec81d3030895e9315407d1}} 
+void \hyperlink{classmodel_1_1Army_a1cc5910e80ec81d3030895e9315407d1}{vanish} ()
+\begin{DoxyCompactList}\small\item\em Funkcja usuwająca armię. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Army_acf38d070e85d7d407dc098eab5400f75}\label{classmodel_1_1Army_acf38d070e85d7d407dc098eab5400f75}} 
+int \hyperlink{classmodel_1_1Army_acf38d070e85d7d407dc098eab5400f75}{count\+\_\+army\+\_\+force} () const
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca siłę armii; sumuje siły jej oddziałów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{classmodel_1_1Army}{Army}. 
+
+Klasa armii w rozumieniu bota, będąca obiektem gry, więc publicznie dziedzicząca po klasie \hyperlink{classmodel_1_1GameObject}{Game\+Object}. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classmodel_1_1Army_a09146560c4983f1d478cd490cc266333}\label{classmodel_1_1Army_a09146560c4983f1d478cd490cc266333}} 
+\index{model\+::\+Army@{model\+::\+Army}!Army@{Army}}
+\index{Army@{Army}!model\+::\+Army@{model\+::\+Army}}
+\subsubsection{\texorpdfstring{Army()}{Army()}}
+{\footnotesize\ttfamily model\+::\+Army\+::\+Army (\begin{DoxyParamCaption}\item[{int}]{high\+\_\+tier\+\_\+num,  }\item[{int}]{mid\+\_\+tier\+\_\+num,  }\item[{int}]{low\+\_\+tier\+\_\+num,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor z parametrami integerowymi. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em high\+\_\+tier\+\_\+num} & liczba jednostek wysokiego poziomu. \\
+\hline
+{\em mid\+\_\+tier\+\_\+num} & liczba jednostek średniego poziomu. \\
+\hline
+{\em low\+\_\+tier\+\_\+num} & liczba jednostek niskiego poziomu. \\
+\hline
+{\em x} & współrzędna x. \\
+\hline
+{\em y} & współrzędna y. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classmodel_1_1Army_a4821e64f682c7b07e4e0909b58980509}\label{classmodel_1_1Army_a4821e64f682c7b07e4e0909b58980509}} 
+\index{model\+::\+Army@{model\+::\+Army}!kill\+\_\+high\+\_\+tier@{kill\+\_\+high\+\_\+tier}}
+\index{kill\+\_\+high\+\_\+tier@{kill\+\_\+high\+\_\+tier}!model\+::\+Army@{model\+::\+Army}}
+\subsubsection{\texorpdfstring{kill\+\_\+high\+\_\+tier()}{kill\_high\_tier()}}
+{\footnotesize\ttfamily void model\+::\+Army\+::kill\+\_\+high\+\_\+tier (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja zmniejszająca liczbę jednostek wysokiego poziomu. 
+\begin{DoxyParams}{Parametry}
+{\em quantity} & liczba usuwanych jednostek pomnożona przez współczynnik wysokiego poziomu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1Army_ae9f218c741bba69fab5ba304a037411b}\label{classmodel_1_1Army_ae9f218c741bba69fab5ba304a037411b}} 
+\index{model\+::\+Army@{model\+::\+Army}!kill\+\_\+low\+\_\+tier@{kill\+\_\+low\+\_\+tier}}
+\index{kill\+\_\+low\+\_\+tier@{kill\+\_\+low\+\_\+tier}!model\+::\+Army@{model\+::\+Army}}
+\subsubsection{\texorpdfstring{kill\+\_\+low\+\_\+tier()}{kill\_low\_tier()}}
+{\footnotesize\ttfamily void model\+::\+Army\+::kill\+\_\+low\+\_\+tier (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja zmniejszająca liczbę jednostek niskiego poziomu. 
+\begin{DoxyParams}{Parametry}
+{\em quantity} & liczba usuwanych jednostek \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1Army_a25e008794fb0295355658734000f9924}\label{classmodel_1_1Army_a25e008794fb0295355658734000f9924}} 
+\index{model\+::\+Army@{model\+::\+Army}!kill\+\_\+mid\+\_\+tier@{kill\+\_\+mid\+\_\+tier}}
+\index{kill\+\_\+mid\+\_\+tier@{kill\+\_\+mid\+\_\+tier}!model\+::\+Army@{model\+::\+Army}}
+\subsubsection{\texorpdfstring{kill\+\_\+mid\+\_\+tier()}{kill\_mid\_tier()}}
+{\footnotesize\ttfamily void model\+::\+Army\+::kill\+\_\+mid\+\_\+tier (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja zmniejszająca liczbę jednostek średniego poziomu. 
+\begin{DoxyParams}{Parametry}
+{\em quantity} & liczba usuwanych jednostek pomnożona przez współczynnik średniego poziomu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1Army_aad5caea451cef381210253fa32b70089}\label{classmodel_1_1Army_aad5caea451cef381210253fa32b70089}} 
+\index{model\+::\+Army@{model\+::\+Army}!recruit\+\_\+high\+\_\+tier@{recruit\+\_\+high\+\_\+tier}}
+\index{recruit\+\_\+high\+\_\+tier@{recruit\+\_\+high\+\_\+tier}!model\+::\+Army@{model\+::\+Army}}
+\subsubsection{\texorpdfstring{recruit\+\_\+high\+\_\+tier()}{recruit\_high\_tier()}}
+{\footnotesize\ttfamily void model\+::\+Army\+::recruit\+\_\+high\+\_\+tier (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja zwiększająca liczbę jednostek wysokiego poziomu. 
+\begin{DoxyParams}{Parametry}
+{\em quantity} & liczba dodawanych jednostek \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1Army_a64148705305e62116c2f8feb170a917d}\label{classmodel_1_1Army_a64148705305e62116c2f8feb170a917d}} 
+\index{model\+::\+Army@{model\+::\+Army}!recruit\+\_\+low\+\_\+tier@{recruit\+\_\+low\+\_\+tier}}
+\index{recruit\+\_\+low\+\_\+tier@{recruit\+\_\+low\+\_\+tier}!model\+::\+Army@{model\+::\+Army}}
+\subsubsection{\texorpdfstring{recruit\+\_\+low\+\_\+tier()}{recruit\_low\_tier()}}
+{\footnotesize\ttfamily void model\+::\+Army\+::recruit\+\_\+low\+\_\+tier (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja zwiększająca liczbę jednostek niskiego poziomu. 
+\begin{DoxyParams}{Parametry}
+{\em quantity} & liczba dodawanych jednostek \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1Army_a30f4b8e102f400969a86bebbfeb9bbb3}\label{classmodel_1_1Army_a30f4b8e102f400969a86bebbfeb9bbb3}} 
+\index{model\+::\+Army@{model\+::\+Army}!recruit\+\_\+mid\+\_\+tier@{recruit\+\_\+mid\+\_\+tier}}
+\index{recruit\+\_\+mid\+\_\+tier@{recruit\+\_\+mid\+\_\+tier}!model\+::\+Army@{model\+::\+Army}}
+\subsubsection{\texorpdfstring{recruit\+\_\+mid\+\_\+tier()}{recruit\_mid\_tier()}}
+{\footnotesize\ttfamily void model\+::\+Army\+::recruit\+\_\+mid\+\_\+tier (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Funkcja zwiększająca liczbę jednostek średniego poziomu. 
+\begin{DoxyParams}{Parametry}
+{\em quantity} & liczba dodawanych jednostek \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+/home/bartlomiej/eclipse-\/workspace/lab\+\_\+3/src/bot/model/\hyperlink{army_8hpp}{army.\+hpp}\end{DoxyCompactItemize}

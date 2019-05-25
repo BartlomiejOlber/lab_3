@@ -1,0 +1,190 @@
+\hypertarget{classmodel_1_1Castle}{}\section{Dokumentacja klasy model\+:\+:Castle}
+\label{classmodel_1_1Castle}\index{model\+::\+Castle@{model\+::\+Castle}}
+
+
+Klasa \hyperlink{classmodel_1_1Castle}{Castle}.  
+
+
+
+
+{\ttfamily \#include $<$castle.\+hpp$>$}
+
+
+
+Diagram dziedziczenia dla model\+:\+:Castle\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classmodel_1_1Castle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla model\+:\+:Castle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classmodel_1_1Castle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1Castle_a26e1b6313f73e34d1babd517f5d56c1f}{Castle} (int high\+\_\+tier\+\_\+army\+\_\+num=0, int mid\+\_\+tier\+\_\+army\+\_\+num=0, int low\+\_\+tier\+\_\+army\+\_\+num=0, \hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status} status=Status\+::\+N\+E\+U\+T\+R\+AL, int high\+\_\+tier\+\_\+buildings\+\_\+num=0, int mid\+\_\+tier\+\_\+buildings\+\_\+num=0, int low\+\_\+tier\+\_\+buildings\+\_\+num=0, int high\+\_\+tier\+\_\+recruitment\+\_\+num=0, int mid\+\_\+tier\+\_\+recruitment\+\_\+num=0, int low\+\_\+tier\+\_\+recruitment\+\_\+num=0, int x=0, int y=0)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor domyślny. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1Castle_af4e3122af95b49521d4b57d7ec671712}{Castle} (const std\+::vector$<$ int $>$ \&params, \hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status} status)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a3ee46a8f9e30c7e1ff7bef9d650c233e}\label{classmodel_1_1Castle_a3ee46a8f9e30c7e1ff7bef9d650c233e}} 
+double \hyperlink{classmodel_1_1Castle_a3ee46a8f9e30c7e1ff7bef9d650c233e}{defence\+\_\+bonus} () const
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca bonus obronny. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a668531c7d4699e36dc7f1f4d449653dc}\label{classmodel_1_1Castle_a668531c7d4699e36dc7f1f4d449653dc}} 
+void \hyperlink{classmodel_1_1Castle_a668531c7d4699e36dc7f1f4d449653dc}{build\+\_\+low\+\_\+tier} ()
+\begin{DoxyCompactList}\small\item\em Funkcja budowania budynku niskiego poziomu; zwiększa liczbę tych budynków w zamku. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a59e4a67ca637be7f4624915e514e761f}\label{classmodel_1_1Castle_a59e4a67ca637be7f4624915e514e761f}} 
+void \hyperlink{classmodel_1_1Castle_a59e4a67ca637be7f4624915e514e761f}{build\+\_\+mid\+\_\+tier} ()
+\begin{DoxyCompactList}\small\item\em Funkcja budowania budynku średniego poziomu; zwiększa liczbę tych budynków w zamku. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a89497c4fa84a2264329d36683d5d15d1}\label{classmodel_1_1Castle_a89497c4fa84a2264329d36683d5d15d1}} 
+void \hyperlink{classmodel_1_1Castle_a89497c4fa84a2264329d36683d5d15d1}{build\+\_\+high\+\_\+tier} ()
+\begin{DoxyCompactList}\small\item\em Funkcja budowania budynku wysokiego poziomu; zwiększa liczbę tych budynków w zamku. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a35900af063f73ccb135e66796c48e383}\label{classmodel_1_1Castle_a35900af063f73ccb135e66796c48e383}} 
+void \hyperlink{classmodel_1_1Castle_a35900af063f73ccb135e66796c48e383}{recruit\+\_\+high\+\_\+tier} (int quantity)
+\begin{DoxyCompactList}\small\item\em Funkcja rekrutowania jednostki wysokiego poziomu; zmniejsza liczbę możliwych do rektutacji i zwiększa liczbę jednostek w garnizonie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a8b8a25ca83a7c8d935bc3892109abe6f}\label{classmodel_1_1Castle_a8b8a25ca83a7c8d935bc3892109abe6f}} 
+void \hyperlink{classmodel_1_1Castle_a8b8a25ca83a7c8d935bc3892109abe6f}{recruit\+\_\+mid\+\_\+tier} (int quantity)
+\begin{DoxyCompactList}\small\item\em Funkcja rekrutowania jednostki średniego poziomu; zmniejsza liczbę możliwych do rektutacji i zwiększa liczbę jednostek w garnizonie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_aa80ab7329c7db0de69ecfa1ab4ed8e17}\label{classmodel_1_1Castle_aa80ab7329c7db0de69ecfa1ab4ed8e17}} 
+void \hyperlink{classmodel_1_1Castle_aa80ab7329c7db0de69ecfa1ab4ed8e17}{recruit\+\_\+low\+\_\+tier} (int quantity)
+\begin{DoxyCompactList}\small\item\em Funkcja rekrutowania jednostki niskiego poziomu; zmniejsza liczbę możliwych do rektutacji i zwiększa liczbę jednostek w garnizonie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_abc66c3c106ba785d61a8c18c747105fb}\label{classmodel_1_1Castle_abc66c3c106ba785d61a8c18c747105fb}} 
+int \hyperlink{classmodel_1_1Castle_abc66c3c106ba785d61a8c18c747105fb}{get\+\_\+high\+\_\+tier\+\_\+recruitment\+\_\+num} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca liczbę jednostek wysokiego poziomu możliwą do rekrutacji. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a8d51d7365175bf1969f66115f22f5f6c}\label{classmodel_1_1Castle_a8d51d7365175bf1969f66115f22f5f6c}} 
+int \hyperlink{classmodel_1_1Castle_a8d51d7365175bf1969f66115f22f5f6c}{get\+\_\+mid\+\_\+tier\+\_\+recruitment\+\_\+num} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca liczbę jednostek średniego poziomu możliwą do rekrutacji. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_aeeb01c7a4afe8ebfd383120fe9788fce}\label{classmodel_1_1Castle_aeeb01c7a4afe8ebfd383120fe9788fce}} 
+int \hyperlink{classmodel_1_1Castle_aeeb01c7a4afe8ebfd383120fe9788fce}{get\+\_\+low\+\_\+tier\+\_\+recruitment\+\_\+num} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca liczbę jednostek niskiego poziomu możliwą do rekrutacji. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_afa5847ea8e097aaa3bfeb4f040514225}\label{classmodel_1_1Castle_afa5847ea8e097aaa3bfeb4f040514225}} 
+bool \hyperlink{classmodel_1_1Castle_afa5847ea8e097aaa3bfeb4f040514225}{is\+\_\+development\+\_\+available\+\_\+high} () const
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartośc logiczą czy budowa budynku wysokiego poziomu jest możliwa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a125b8044d0a31b72941d14bad9a279ea}\label{classmodel_1_1Castle_a125b8044d0a31b72941d14bad9a279ea}} 
+bool \hyperlink{classmodel_1_1Castle_a125b8044d0a31b72941d14bad9a279ea}{is\+\_\+development\+\_\+available\+\_\+mid} () const
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartośc logiczą czy budowa budynku średniego poziomu jest możliwa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a58687978e87a7a83d20093f250e04ad7}\label{classmodel_1_1Castle_a58687978e87a7a83d20093f250e04ad7}} 
+bool \hyperlink{classmodel_1_1Castle_a58687978e87a7a83d20093f250e04ad7}{is\+\_\+development\+\_\+available\+\_\+low} () const
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wartośc logiczą czy budowa budynku niskiego poziomu jest możliwa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_ab1755d63a55a286002ef49b631b00d76}\label{classmodel_1_1Castle_ab1755d63a55a286002ef49b631b00d76}} 
+int \hyperlink{classmodel_1_1Castle_ab1755d63a55a286002ef49b631b00d76}{count\+\_\+castle\+\_\+force} () const
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca siłę zamku; mnoży siłę garnizonu przez bonus obronny. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a3de598a4bb266b1d6d0920e0a53f7e35}\label{classmodel_1_1Castle_a3de598a4bb266b1d6d0920e0a53f7e35}} 
+void \hyperlink{classmodel_1_1Castle_a3de598a4bb266b1d6d0920e0a53f7e35}{conquer} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zdobądź zamek; ustawia jego status na przyjazny i zeruje garnizon zamku. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a74b526c24b8ac302c625b9c1162c9d25}\label{classmodel_1_1Castle_a74b526c24b8ac302c625b9c1162c9d25}} 
+\hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status} \hyperlink{classmodel_1_1Castle_a74b526c24b8ac302c625b9c1162c9d25}{get\+\_\+status} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca status zamku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statyczne atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a33917ec4ec233ca0155ef1bb1e6e71c3}\label{classmodel_1_1Castle_a33917ec4ec233ca0155ef1bb1e6e71c3}} 
+static const int \hyperlink{classmodel_1_1Castle_a33917ec4ec233ca0155ef1bb1e6e71c3}{L\+O\+W\+\_\+\+T\+I\+E\+R\+\_\+\+B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+C\+O\+ST} = 1000
+\begin{DoxyCompactList}\small\item\em Statyczna stała; koszt wybudowania budynku niskiego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a097c1b13b5b2963e40ad22c38fbc2702}\label{classmodel_1_1Castle_a097c1b13b5b2963e40ad22c38fbc2702}} 
+static const int \hyperlink{classmodel_1_1Castle_a097c1b13b5b2963e40ad22c38fbc2702}{M\+I\+D\+\_\+\+T\+I\+E\+R\+\_\+\+B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+C\+O\+ST} = 4000
+\begin{DoxyCompactList}\small\item\em Statyczna stała; koszt wybudowania budynku średniego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a35ec993e948dc5514f248beba9dcd27c}\label{classmodel_1_1Castle_a35ec993e948dc5514f248beba9dcd27c}} 
+static const int \hyperlink{classmodel_1_1Castle_a35ec993e948dc5514f248beba9dcd27c}{H\+I\+G\+H\+\_\+\+T\+I\+E\+R\+\_\+\+B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+C\+O\+ST} = 15000
+\begin{DoxyCompactList}\small\item\em Statyczna stała; koszt wybudowania budynku wysokiego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_ac5c4d0b65b66c7058a87eecf4b712b78}\label{classmodel_1_1Castle_ac5c4d0b65b66c7058a87eecf4b712b78}} 
+static const int \hyperlink{classmodel_1_1Castle_ac5c4d0b65b66c7058a87eecf4b712b78}{L\+O\+W\+\_\+\+T\+I\+E\+R\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+C\+O\+ST} = 100
+\begin{DoxyCompactList}\small\item\em Statyczna stała; koszt rekrutacji jednostki niskiego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_acccacb70864e05f2c299abefa91df555}\label{classmodel_1_1Castle_acccacb70864e05f2c299abefa91df555}} 
+static const int \hyperlink{classmodel_1_1Castle_acccacb70864e05f2c299abefa91df555}{M\+I\+D\+\_\+\+T\+I\+E\+R\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+C\+O\+ST} = 400
+\begin{DoxyCompactList}\small\item\em Statyczna stała; koszt rekrutacji jednostki średniego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_ac14c39feb4b10c1b5e03db76f26cabd2}\label{classmodel_1_1Castle_ac14c39feb4b10c1b5e03db76f26cabd2}} 
+static const int \hyperlink{classmodel_1_1Castle_ac14c39feb4b10c1b5e03db76f26cabd2}{H\+I\+G\+H\+\_\+\+T\+I\+E\+R\+\_\+\+E\+N\+T\+I\+T\+Y\+\_\+\+C\+O\+ST} = 2000
+\begin{DoxyCompactList}\small\item\em Statyczna stała; koszt rekrutacji jednostki wysokiego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a78afd159a8925f53cd895df7394dc1f2}\label{classmodel_1_1Castle_a78afd159a8925f53cd895df7394dc1f2}} 
+static const int \hyperlink{classmodel_1_1Castle_a78afd159a8925f53cd895df7394dc1f2}{M\+A\+X\+\_\+\+H\+I\+G\+H\+\_\+\+T\+I\+E\+R\+\_\+\+B\+U\+I\+L\+D\+I\+N\+GS} = 3
+\begin{DoxyCompactList}\small\item\em Statyczna stała; maksymalna liczba budynków wysokiego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a343dfe0538d36cf80ab632f5f6221eb2}\label{classmodel_1_1Castle_a343dfe0538d36cf80ab632f5f6221eb2}} 
+static const int \hyperlink{classmodel_1_1Castle_a343dfe0538d36cf80ab632f5f6221eb2}{M\+A\+X\+\_\+\+M\+I\+D\+\_\+\+T\+I\+E\+R\+\_\+\+B\+U\+I\+L\+D\+I\+N\+GS} = 5
+\begin{DoxyCompactList}\small\item\em Statyczna stała; maksymalna liczba budynków średniego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_aff52e7e4d26f5062f1943a10a8b753d3}\label{classmodel_1_1Castle_aff52e7e4d26f5062f1943a10a8b753d3}} 
+static const int \hyperlink{classmodel_1_1Castle_aff52e7e4d26f5062f1943a10a8b753d3}{M\+A\+X\+\_\+\+L\+O\+W\+\_\+\+T\+I\+E\+R\+\_\+\+B\+U\+I\+L\+D\+I\+N\+GS} = 10
+\begin{DoxyCompactList}\small\item\em Statyczna stała; maksymalna liczba budynków niskiego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a8aa1907d2863606d0aab8ae449dd7d57}\label{classmodel_1_1Castle_a8aa1907d2863606d0aab8ae449dd7d57}} 
+static constexpr double \hyperlink{classmodel_1_1Castle_a8aa1907d2863606d0aab8ae449dd7d57}{L\+O\+W\+\_\+\+T\+I\+E\+R\+\_\+\+B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+D\+E\+F\+E\+N\+C\+E\+\_\+\+B\+O\+N\+US} = 0.\+01
+\begin{DoxyCompactList}\small\item\em Statyczna stała; bonus do obrony od budynku niskiego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a26afa71c719e1009f3c0884e9064ae61}\label{classmodel_1_1Castle_a26afa71c719e1009f3c0884e9064ae61}} 
+static constexpr double \hyperlink{classmodel_1_1Castle_a26afa71c719e1009f3c0884e9064ae61}{M\+I\+D\+\_\+\+T\+I\+E\+R\+\_\+\+B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+D\+E\+F\+E\+N\+C\+E\+\_\+\+B\+O\+N\+US} = 0.\+02
+\begin{DoxyCompactList}\small\item\em Statyczna stała; bonus do obrony od budynku średniego poziomu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1Castle_a64d14929c22abc58acbae97420111370}\label{classmodel_1_1Castle_a64d14929c22abc58acbae97420111370}} 
+static constexpr double \hyperlink{classmodel_1_1Castle_a64d14929c22abc58acbae97420111370}{H\+I\+G\+H\+\_\+\+T\+I\+E\+R\+\_\+\+B\+U\+I\+L\+D\+I\+N\+G\+\_\+\+D\+E\+F\+E\+N\+C\+E\+\_\+\+B\+O\+N\+US} = 0.\+05
+\begin{DoxyCompactList}\small\item\em Statyczna stała; bonus do obrony od budynku wysokiego poziomu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{classmodel_1_1Castle}{Castle}. 
+
+Klasa zamku w rozumieniu bota, będąca obiektem gry, więc publicznie dziedzicząca po klasie \hyperlink{classmodel_1_1GameObject}{Game\+Object}. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classmodel_1_1Castle_a26e1b6313f73e34d1babd517f5d56c1f}\label{classmodel_1_1Castle_a26e1b6313f73e34d1babd517f5d56c1f}} 
+\index{model\+::\+Castle@{model\+::\+Castle}!Castle@{Castle}}
+\index{Castle@{Castle}!model\+::\+Castle@{model\+::\+Castle}}
+\subsubsection{\texorpdfstring{Castle()}{Castle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily model\+::\+Castle\+::\+Castle (\begin{DoxyParamCaption}\item[{int}]{high\+\_\+tier\+\_\+army\+\_\+num = {\ttfamily 0},  }\item[{int}]{mid\+\_\+tier\+\_\+army\+\_\+num = {\ttfamily 0},  }\item[{int}]{low\+\_\+tier\+\_\+army\+\_\+num = {\ttfamily 0},  }\item[{\hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status}}]{status = {\ttfamily Status\+:\+:NEUTRAL},  }\item[{int}]{high\+\_\+tier\+\_\+buildings\+\_\+num = {\ttfamily 0},  }\item[{int}]{mid\+\_\+tier\+\_\+buildings\+\_\+num = {\ttfamily 0},  }\item[{int}]{low\+\_\+tier\+\_\+buildings\+\_\+num = {\ttfamily 0},  }\item[{int}]{high\+\_\+tier\+\_\+recruitment\+\_\+num = {\ttfamily 0},  }\item[{int}]{mid\+\_\+tier\+\_\+recruitment\+\_\+num = {\ttfamily 0},  }\item[{int}]{low\+\_\+tier\+\_\+recruitment\+\_\+num = {\ttfamily 0},  }\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor domyślny. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em high\+\_\+tier\+\_\+army\+\_\+num} & liczba jednostek wysokiego poziomu w garnizonie. \\
+\hline
+{\em mid\+\_\+tier\+\_\+army\+\_\+num} & liczba jednostek średniego poziomu w garnizonie. \\
+\hline
+{\em low\+\_\+tier\+\_\+army\+\_\+num} & liczba jednostek niskiego poziomu w garnizonie. \\
+\hline
+{\em status} & status zamku. \\
+\hline
+{\em high\+\_\+tier\+\_\+buildings\+\_\+num} & liczba budynków wysokiego poziomu w zamku. \\
+\hline
+{\em mid\+\_\+tier\+\_\+buildings\+\_\+num} & liczba budynków średniego poziomu w zamku. \\
+\hline
+{\em low\+\_\+tier\+\_\+buildings\+\_\+num} & liczba budynków niskiego poziomu w zamku. \\
+\hline
+{\em high\+\_\+tier\+\_\+recruitment\+\_\+num} & liczba jednostek wysokiego poziomu możliwych do rekrutacji w zamku. \\
+\hline
+{\em mid\+\_\+tier\+\_\+recruitment\+\_\+num} & liczba jednostek średniego poziomu możliwych do rekrutacji w zamku. \\
+\hline
+{\em low\+\_\+tier\+\_\+recruitment\+\_\+num} & liczba jednostek niskiego poziomu możliwych do rekrutacji w zamku. \\
+\hline
+{\em x} & współrzędna x. \\
+\hline
+{\em y} & współrzędna y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1Castle_af4e3122af95b49521d4b57d7ec671712}\label{classmodel_1_1Castle_af4e3122af95b49521d4b57d7ec671712}} 
+\index{model\+::\+Castle@{model\+::\+Castle}!Castle@{Castle}}
+\index{Castle@{Castle}!model\+::\+Castle@{model\+::\+Castle}}
+\subsubsection{\texorpdfstring{Castle()}{Castle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily model\+::\+Castle\+::\+Castle (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{params,  }\item[{\hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status}}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em params} & wektor parametrów integerowych. \\
+\hline
+{\em status} & status bohatera. \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+/home/bartlomiej/eclipse-\/workspace/lab\+\_\+3/src/bot/model/\hyperlink{castle_8hpp}{castle.\+hpp}\end{DoxyCompactItemize}

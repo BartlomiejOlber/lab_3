@@ -1,0 +1,9 @@
+<map id="model::GameObject" name="model::GameObject">
+<area shape="rect" id="node2" href="$classmodel_1_1Army.html" title="Klasa Army. " alt="" coords="5,80,101,107"/>
+<area shape="rect" id="node3" href="$classmodel_1_1Building.html" title="Klasa Building. " alt="" coords="126,80,237,107"/>
+<area shape="rect" id="node5" href="$classmodel_1_1Castle.html" title="Klasa Castle. " alt="" coords="261,80,363,107"/>
+<area shape="rect" id="node6" href="$classmodel_1_1Gold.html" title="Klasa Gold. " alt="" coords="387,80,479,107"/>
+<area shape="rect" id="node7" href="$classmodel_1_1Hero.html" title="Klasa Hero. " alt="" coords="504,80,597,107"/>
+<area shape="rect" id="node8" href="$classmodel_1_1Troop.html" title="Klasa Troop. " alt="" coords="621,80,720,107"/>
+<area shape="rect" id="node4" href="$classmodel_1_1GuardedBuilding.html" title="Klasa GuardedBuilding. " alt="" coords="101,155,261,181"/>
+</map>

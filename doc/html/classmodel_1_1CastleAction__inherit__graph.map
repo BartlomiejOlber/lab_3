@@ -1,0 +1,9 @@
+<map id="model::CastleAction" name="model::CastleAction">
+<area shape="rect" id="node3" href="$classmodel_1_1BuildHighTierAction.html" title="Klasa BuildHighTierAction. " alt="" coords="351,5,531,32"/>
+<area shape="rect" id="node4" href="$classmodel_1_1BuildLowTierAction.html" title="Klasa BuildLowTierAction. " alt="" coords="352,56,529,83"/>
+<area shape="rect" id="node5" href="$classmodel_1_1BuildMidTierAction.html" title="Klasa BuildMidTierAction. " alt="" coords="353,107,528,133"/>
+<area shape="rect" id="node6" href="$classmodel_1_1RecruitHighTierAction.html" title="Klasa RecruitHighTierAction. " alt="" coords="344,157,537,184"/>
+<area shape="rect" id="node7" href="$classmodel_1_1RecruitLowTierAction.html" title="Klasa RecruitLowTierAction. " alt="" coords="345,208,536,235"/>
+<area shape="rect" id="node8" href="$classmodel_1_1RecruitMidTierAction.html" title="Klasa RecruitMidTierAction. " alt="" coords="347,259,534,285"/>
+<area shape="rect" id="node2" href="$classmodel_1_1Action.html" title="Klasa Action. " alt="" coords="5,132,108,159"/>
+</map>

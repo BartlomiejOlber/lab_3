@@ -1,0 +1,111 @@
+\hypertarget{classmodel_1_1GuardedBuilding}{}\section{Dokumentacja klasy model\+:\+:Guarded\+Building}
+\label{classmodel_1_1GuardedBuilding}\index{model\+::\+Guarded\+Building@{model\+::\+Guarded\+Building}}
+
+
+Klasa \hyperlink{classmodel_1_1GuardedBuilding}{Guarded\+Building}.  
+
+
+
+
+{\ttfamily \#include $<$guarded\+\_\+building.\+hpp$>$}
+
+
+
+Diagram dziedziczenia dla model\+:\+:Guarded\+Building\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classmodel_1_1GuardedBuilding__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla model\+:\+:Guarded\+Building\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classmodel_1_1GuardedBuilding__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmodel_1_1GuardedBuilding_acd7faa9dc9d87371b33030b6f0223339}{Guarded\+Building} (\hyperlink{tier_8hpp_a50a003ab1ea342f138c038fabfd1ee55}{Tier} building\+\_\+tier, \hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status} status, int guards\+\_\+num, \hyperlink{tier_8hpp_a50a003ab1ea342f138c038fabfd1ee55}{Tier} guards\+\_\+tier, int x, int y)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor. \end{DoxyCompactList}\item 
+\hyperlink{classmodel_1_1GuardedBuilding_aaf02e02d038198a6cb406505a07ff122}{Guarded\+Building} (int building\+\_\+tier=0, int status=0, int guards\+\_\+num=0, int guards\+\_\+tier=0, int x=0, int y=0)
+\begin{DoxyCompactList}\small\item\em Publiczny konstruktor domyślny. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1GuardedBuilding_aa8c31f9ba289c4a2d5a69faf29ec6420}\label{classmodel_1_1GuardedBuilding_aa8c31f9ba289c4a2d5a69faf29ec6420}} 
+void \hyperlink{classmodel_1_1GuardedBuilding_aa8c31f9ba289c4a2d5a69faf29ec6420}{conquer} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zdobycia budynku; ustawia status na przyjazny i liczbę strzegących na 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1GuardedBuilding_a7c2e4457eb1d29dd7b05268c1c5796e6}\label{classmodel_1_1GuardedBuilding_a7c2e4457eb1d29dd7b05268c1c5796e6}} 
+\hyperlink{tier_8hpp_a50a003ab1ea342f138c038fabfd1ee55}{Tier} \hyperlink{classmodel_1_1GuardedBuilding_a7c2e4457eb1d29dd7b05268c1c5796e6}{get\+\_\+guards\+\_\+tier} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca poziom oddziału. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1GuardedBuilding_aa06bc4f6b2ab78d37556a1395e6278dc}\label{classmodel_1_1GuardedBuilding_aa06bc4f6b2ab78d37556a1395e6278dc}} 
+int \hyperlink{classmodel_1_1GuardedBuilding_aa06bc4f6b2ab78d37556a1395e6278dc}{get\+\_\+guards\+\_\+quantity} () const
+\begin{DoxyCompactList}\small\item\em Getter zwraca liczebnośc oddziału. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodel_1_1GuardedBuilding_a0bd614b0fa5b050c6226bc1f986b526f}\label{classmodel_1_1GuardedBuilding_a0bd614b0fa5b050c6226bc1f986b526f}} 
+int \hyperlink{classmodel_1_1GuardedBuilding_a0bd614b0fa5b050c6226bc1f986b526f}{count\+\_\+guards\+\_\+force} () const
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca siłę oddziału strzegącego budynek. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{classmodel_1_1GuardedBuilding}{Guarded\+Building}. 
+
+Klasa strzeżonego budynku w rozumieniu bota, będąca budynkiem, więc publicznie dziedzicząca po klasie \hyperlink{classmodel_1_1Building}{Building}. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classmodel_1_1GuardedBuilding_acd7faa9dc9d87371b33030b6f0223339}\label{classmodel_1_1GuardedBuilding_acd7faa9dc9d87371b33030b6f0223339}} 
+\index{model\+::\+Guarded\+Building@{model\+::\+Guarded\+Building}!Guarded\+Building@{Guarded\+Building}}
+\index{Guarded\+Building@{Guarded\+Building}!model\+::\+Guarded\+Building@{model\+::\+Guarded\+Building}}
+\subsubsection{\texorpdfstring{Guarded\+Building()}{GuardedBuilding()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily model\+::\+Guarded\+Building\+::\+Guarded\+Building (\begin{DoxyParamCaption}\item[{\hyperlink{tier_8hpp_a50a003ab1ea342f138c038fabfd1ee55}{Tier}}]{building\+\_\+tier,  }\item[{\hyperlink{status_8hpp_a822822ece62ee330ee656034849df887}{Status}}]{status,  }\item[{int}]{guards\+\_\+num,  }\item[{\hyperlink{tier_8hpp_a50a003ab1ea342f138c038fabfd1ee55}{Tier}}]{guards\+\_\+tier,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em building\+\_\+tier} & poziom budynku klasy enumeracyjnej Tier. \\
+\hline
+{\em status} & status budynku klasy enumeracyjnej Status. \\
+\hline
+{\em guards\+\_\+num} & liczebność oddziału. \\
+\hline
+{\em guards\+\_\+tier} & poziom oddziału strzegącego klasy enumeracyjnej Tier. \\
+\hline
+{\em x} & współrzędna x. \\
+\hline
+{\em y} & współrzędna y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmodel_1_1GuardedBuilding_aaf02e02d038198a6cb406505a07ff122}\label{classmodel_1_1GuardedBuilding_aaf02e02d038198a6cb406505a07ff122}} 
+\index{model\+::\+Guarded\+Building@{model\+::\+Guarded\+Building}!Guarded\+Building@{Guarded\+Building}}
+\index{Guarded\+Building@{Guarded\+Building}!model\+::\+Guarded\+Building@{model\+::\+Guarded\+Building}}
+\subsubsection{\texorpdfstring{Guarded\+Building()}{GuardedBuilding()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily model\+::\+Guarded\+Building\+::\+Guarded\+Building (\begin{DoxyParamCaption}\item[{int}]{building\+\_\+tier = {\ttfamily 0},  }\item[{int}]{status = {\ttfamily 0},  }\item[{int}]{guards\+\_\+num = {\ttfamily 0},  }\item[{int}]{guards\+\_\+tier = {\ttfamily 0},  }\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publiczny konstruktor domyślny. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em building\+\_\+tier} & poziom budynku konwertowany do klasy enumeracyjnej Tier. \\
+\hline
+{\em status} & status budynku konwertowany do klasy enumeracyjnej Status. \\
+\hline
+{\em guards\+\_\+num} & liczebność oddziału. \\
+\hline
+{\em guards\+\_\+tier} & poziom oddziału strzegącego konwertowany do klasy enumeracyjnej Tier. \\
+\hline
+{\em x} & współrzędna x. \\
+\hline
+{\em y} & współrzędna y. \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+/home/bartlomiej/eclipse-\/workspace/lab\+\_\+3/src/bot/model/\hyperlink{guarded__building_8hpp}{guarded\+\_\+building.\+hpp}\end{DoxyCompactItemize}

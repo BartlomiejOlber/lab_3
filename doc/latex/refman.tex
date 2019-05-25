@@ -1,0 +1,219 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Wygenerowano przez Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Wygenerowano przez Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large P\+R\+OI projekt 3 }\\
+\vspace*{1cm}
+{\large Wygenerowano przez Doxygen 1.8.13}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{Gra w życie}
+\label{index}\hypertarget{index}{}\input{index}
+\chapter{Indeks hierarchiczny}
+\input{hierarchy}
+\chapter{Indeks klas}
+\input{annotated}
+\chapter{Indeks plików}
+\input{files}
+\chapter{Dokumentacja klas}
+\input{classmodel_1_1Action}
+\input{classbot_1_1ActionExecutor}
+\input{classmodel_1_1Army}
+\input{classbrain_1_1Brain}
+\input{classmodel_1_1BuildHighTierAction}
+\input{classmodel_1_1Building}
+\input{classmodel_1_1BuildLowTierAction}
+\input{classmodel_1_1BuildMidTierAction}
+\input{classmodel_1_1Castle}
+\input{classmodel_1_1CastleAction}
+\input{classmodel_1_1EnterAction}
+\input{classmodel_1_1FightAction}
+\input{classmodel_1_1GameObject}
+\input{structmodel_1_1GameState}
+\input{classmodel_1_1Gold}
+\input{classmodel_1_1GuardedBuilding}
+\input{classmodel_1_1Hero}
+\input{classmodel_1_1HeroAction}
+\input{classmodel_1_1PickUpAction}
+\input{classmodel_1_1RecruitHighTierAction}
+\input{classmodel_1_1RecruitLowTierAction}
+\input{classmodel_1_1RecruitMidTierAction}
+\input{classbot_1_1ScreenCapture}
+\input{classmodel_1_1StatusConverter}
+\input{classmodel_1_1TierConverter}
+\input{classmodel_1_1TravelToAction}
+\input{classmodel_1_1Troop}
+\chapter{Dokumentacja plików}
+\input{action__executor_8hpp}
+\input{brain_8hpp}
+\input{action_8hpp}
+\input{army_8hpp}
+\input{build__high__tier__action_8hpp}
+\input{build__low__tier__action_8hpp}
+\input{build__mid__tier__action_8hpp}
+\input{building_8hpp}
+\input{castle_8hpp}
+\input{castle__actions_8hpp}
+\input{enter__action_8hpp}
+\input{fight__action_8hpp}
+\input{game__object_8hpp}
+\input{game__state_8hpp}
+\input{gold_8hpp}
+\input{guarded__building_8hpp}
+\input{hero_8hpp}
+\input{hero__action_8hpp}
+\input{pick__up__action_8hpp}
+\input{recruit__high__tier__action_8hpp}
+\input{recruit__low__tier__action_8hpp}
+\input{recruit__mid__tier__action_8hpp}
+\input{status_8hpp}
+\input{tier_8hpp}
+\input{travel__to__action_8hpp}
+\input{troop_8hpp}
+\input{screen__capture_8hpp}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{Indeks}
+\printindex
+
+\end{document}

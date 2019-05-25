@@ -1,0 +1,5 @@
+<map id="model::GameState" name="model::GameState">
+<area shape="rect" id="node2" href="$classmodel_1_1Castle.html" title="Klasa Castle. " alt="" coords="5,81,108,108"/>
+<area shape="rect" id="node3" href="$classmodel_1_1GameObject.html" title="Klasa GameObject. " alt="" coords="47,5,186,32"/>
+<area shape="rect" id="node4" href="$classmodel_1_1Hero.html" title="Klasa Hero. " alt="" coords="133,81,226,108"/>
+</map>

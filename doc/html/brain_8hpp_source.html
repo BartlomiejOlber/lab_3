@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROI projekt 3: Plik źródłowy /home/bartlomiej/eclipse-workspace/lab_3/src/bot/brain.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROI projekt 3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_29d667bb07f05bb7400afdc76794b290.html">bot</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">brain.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="brain_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef BOT_BRAIN_HPP_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define BOT_BRAIN_HPP_</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="game__state_8hpp.html">model/game_state.hpp</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="action_8hpp.html">model/action.hpp</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebrain.html">brain</a> {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classbrain_1_1Brain.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbrain_1_1Brain.html">Brain</a> {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="structmodel_1_1GameState.html">model::GameState</a> game_state_;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classbrain_1_1Brain.html#a5efd1dd47e7690151af7d6cd68ebc05f">   31</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classbrain_1_1Brain.html#a5efd1dd47e7690151af7d6cd68ebc05f">Brain</a>( <span class="keyword">const</span> <a class="code" href="structmodel_1_1GameState.html">model::GameState</a>&amp; game_state ) : game_state_( game_state ){}</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classbrain_1_1Brain.html#a653e083f826df79c344738c4e8bf96dd">play_round</a>( <a class="code" href="action_8hpp.html#a052d176abf53b10863680ac55e7ba40d">model::ActionScenario</a>&amp; action_scenario );</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classbrain_1_1Brain.html#a57f51c02e64db80611cfafed74084a9d">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classbrain_1_1Brain.html#a57f51c02e64db80611cfafed74084a9d">set_start_state</a>( <span class="keyword">const</span> <a class="code" href="structmodel_1_1GameState.html">model::GameState</a>&amp; game_state ){ game_state_ = game_state; }</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classbrain_1_1Brain.html#afd6c8a12a98468660eb54d2f564e7a8b">   37</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="structmodel_1_1GameState.html">model::GameState</a>&amp; <a class="code" href="classbrain_1_1Brain.html#afd6c8a12a98468660eb54d2f564e7a8b">get_final_game_state</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> game_state_; }</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> CASUALTIES_FACTOR_ = 0.4;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> MINIMAL_CASUALTIES_FACTOR_ = 0.1;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> MINIMAL_DOMINANCE_FACTOR_ = 1.1;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> MAXIMAL_CASUALTIES_FACTOR_ = 0.05;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MINIMAL_ENEMY_DISTANCE_FACTOR_ = 2;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> make_hero_actions_( <a class="code" href="action_8hpp.html#a052d176abf53b10863680ac55e7ba40d">model::ActionScenario</a>&amp; action_scenario );</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> make_castle_actions_( <a class="code" href="action_8hpp.html#a052d176abf53b10863680ac55e7ba40d">model::ActionScenario</a>&amp; action_scenario );</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> is_attack_worth_( <span class="keyword">const</span> <a class="code" href="classmodel_1_1Troop.html">model::Troop</a>&amp; troop );</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> is_attack_worth_( <span class="keyword">const</span> <a class="code" href="classmodel_1_1Castle.html">model::Castle</a>&amp; enemy_castle );</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> is_attack_worth_( <span class="keyword">const</span> <a class="code" href="classmodel_1_1Hero.html">model::Hero</a>&amp; enemy_hero );</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> is_attack_worth_( <span class="keyword">const</span> <a class="code" href="classmodel_1_1GuardedBuilding.html">model::GuardedBuilding</a>&amp; guarded_building );</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> is_reachable_( <span class="keywordtype">int</span> movement_points, <span class="keyword">const</span> <a class="code" href="classmodel_1_1GameObject.html">model::GameObject</a>&amp; <span class="keywordtype">object</span> );</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> count_battle_casualties_( <span class="keywordtype">int</span> opponent_force );</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> count_available_to_buy_( <span class="keywordtype">int</span> gold, <span class="keywordtype">int</span> cost, <span class="keywordtype">int</span> limit );</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> find_closest_guarded_building_( <a class="code" href="classmodel_1_1GuardedBuilding.html">model::GuardedBuilding</a>&amp; guarded_building );</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> find_closest_building_( <a class="code" href="classmodel_1_1Building.html">model::Building</a>&amp; building );</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> find_closest_gold_( <span class="keywordtype">int</span>&amp; index, <a class="code" href="classmodel_1_1Gold.html">model::Gold</a>&amp; gold );</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> find_closest_troop_( <span class="keywordtype">int</span>&amp; index, <a class="code" href="classmodel_1_1Troop.html">model::Troop</a>&amp; troop );</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> find_enemy_castle_direction_( <span class="keywordtype">int</span> movement_points, <a class="code" href="classmodel_1_1GameObject.html">model::GameObject</a>&amp; direction );</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BOT_BRAIN_HPP_ */</span><span class="preprocessor"></span></div><div class="ttc" id="game__state_8hpp_html"><div class="ttname"><a href="game__state_8hpp.html">game_state.hpp</a></div><div class="ttdoc">Moduł klasy GameState. </div></div>
+<div class="ttc" id="classbrain_1_1Brain_html_a5efd1dd47e7690151af7d6cd68ebc05f"><div class="ttname"><a href="classbrain_1_1Brain.html#a5efd1dd47e7690151af7d6cd68ebc05f">brain::Brain::Brain</a></div><div class="ttdeci">Brain(const model::GameState &amp;game_state)</div><div class="ttdoc">Publiczny konstruktor z parametrem klasy GameState. </div><div class="ttdef"><b>Definition:</b> brain.hpp:31</div></div>
+<div class="ttc" id="action_8hpp_html"><div class="ttname"><a href="action_8hpp.html">action.hpp</a></div><div class="ttdoc">Moduł klasy Action. </div></div>
+<div class="ttc" id="classbrain_1_1Brain_html_a653e083f826df79c344738c4e8bf96dd"><div class="ttname"><a href="classbrain_1_1Brain.html#a653e083f826df79c344738c4e8bf96dd">brain::Brain::play_round</a></div><div class="ttdeci">void play_round(model::ActionScenario &amp;action_scenario)</div><div class="ttdoc">Funkcja zawierająca algorytm podejmowania decyzji przez bota. </div><div class="ttdef"><b>Definition:</b> brain.cpp:22</div></div>
+<div class="ttc" id="classmodel_1_1GuardedBuilding_html"><div class="ttname"><a href="classmodel_1_1GuardedBuilding.html">model::GuardedBuilding</a></div><div class="ttdoc">Klasa GuardedBuilding. </div><div class="ttdef"><b>Definition:</b> guarded_building.hpp:20</div></div>
+<div class="ttc" id="classbrain_1_1Brain_html"><div class="ttname"><a href="classbrain_1_1Brain.html">brain::Brain</a></div><div class="ttdoc">Klasa Brain. </div><div class="ttdef"><b>Definition:</b> brain.hpp:21</div></div>
+<div class="ttc" id="classmodel_1_1GameObject_html"><div class="ttname"><a href="classmodel_1_1GameObject.html">model::GameObject</a></div><div class="ttdoc">Klasa GameObject. </div><div class="ttdef"><b>Definition:</b> game_object.hpp:19</div></div>
+<div class="ttc" id="classbrain_1_1Brain_html_afd6c8a12a98468660eb54d2f564e7a8b"><div class="ttname"><a href="classbrain_1_1Brain.html#afd6c8a12a98468660eb54d2f564e7a8b">brain::Brain::get_final_game_state</a></div><div class="ttdeci">const model::GameState &amp; get_final_game_state() const</div><div class="ttdoc">Getter zwraca przewidywany stan gry po zakończeniu rundy. </div><div class="ttdef"><b>Definition:</b> brain.hpp:37</div></div>
+<div class="ttc" id="classmodel_1_1Troop_html"><div class="ttname"><a href="classmodel_1_1Troop.html">model::Troop</a></div><div class="ttdoc">Klasa Troop. </div><div class="ttdef"><b>Definition:</b> troop.hpp:21</div></div>
+<div class="ttc" id="classmodel_1_1Hero_html"><div class="ttname"><a href="classmodel_1_1Hero.html">model::Hero</a></div><div class="ttdoc">Klasa Hero. </div><div class="ttdef"><b>Definition:</b> hero.hpp:20</div></div>
+<div class="ttc" id="classmodel_1_1Castle_html"><div class="ttname"><a href="classmodel_1_1Castle.html">model::Castle</a></div><div class="ttdoc">Klasa Castle. </div><div class="ttdef"><b>Definition:</b> castle.hpp:22</div></div>
+<div class="ttc" id="classbrain_1_1Brain_html_a57f51c02e64db80611cfafed74084a9d"><div class="ttname"><a href="classbrain_1_1Brain.html#a57f51c02e64db80611cfafed74084a9d">brain::Brain::set_start_state</a></div><div class="ttdeci">void set_start_state(const model::GameState &amp;game_state)</div><div class="ttdoc">Setter ustawia początkowy stan gry. </div><div class="ttdef"><b>Definition:</b> brain.hpp:35</div></div>
+<div class="ttc" id="classmodel_1_1Building_html"><div class="ttname"><a href="classmodel_1_1Building.html">model::Building</a></div><div class="ttdoc">Klasa Building. </div><div class="ttdef"><b>Definition:</b> building.hpp:21</div></div>
+<div class="ttc" id="action_8hpp_html_a052d176abf53b10863680ac55e7ba40d"><div class="ttname"><a href="action_8hpp.html#a052d176abf53b10863680ac55e7ba40d">model::ActionScenario</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; Action &gt; &gt; ActionScenario</div><div class="ttdoc">Wektor inteligentnych wskaźników na klasę Action - jest to zestaw decyzji bota w jednym kontenerze...</div><div class="ttdef"><b>Definition:</b> action.hpp:54</div></div>
+<div class="ttc" id="classmodel_1_1Gold_html"><div class="ttname"><a href="classmodel_1_1Gold.html">model::Gold</a></div><div class="ttdoc">Klasa Gold. </div><div class="ttdef"><b>Definition:</b> gold.hpp:20</div></div>
+<div class="ttc" id="namespacebrain_html"><div class="ttname"><a href="namespacebrain.html">brain</a></div><div class="ttdef"><b>Definition:</b> brain.cpp:20</div></div>
+<div class="ttc" id="structmodel_1_1GameState_html"><div class="ttname"><a href="structmodel_1_1GameState.html">model::GameState</a></div><div class="ttdoc">Struktura GameState. </div><div class="ttdef"><b>Definition:</b> game_state.hpp:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
