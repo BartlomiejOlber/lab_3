@@ -1,56 +1,46 @@
 /**
 
-@mainpage Gra w życie
+@mainpage Algorytm podejmowania decyzji przez bota w grze
 
 @author Bartłomiej Olber
 
-Gra w życie (Life, The game of life) – jeden z pierwszych i 
-najbardziej znanych przykładów automatu komórkowego, wymyślony 
-w roku 1970 przez brytyjskiego matematyka Johna Conwaya.
-  
-Gra toczy się na nieskończonej planszy (płaszczyźnie) podzielonej 
-na kwadratowe komórki. Każda komórka ma ośmiu „sąsiadów” (tzw.sąsiedztwo Moore’a), 
-czyli komórki przylegające do niej bokami i rogami. Każda 
-komórka może znajdować się w jednym z dwóch stanów: może być albo „żywa” 
-(wartość 1), albo „martwa” (wartość 0). Stany komórek zmieniają się 
-w pewnych jednostkach czasu. Stan wszystkich komórek w pewnej jednostce 
-czasu jest używany do obliczenia stanu wszystkich komórek w następnej 
-jednostce. Po obliczeniu wszystkie komórki zmieniają swój stan dokładnie 
-w tym samym momencie. Stan komórki zależy tylko od liczby jej żywych sąsiadów. 
-W grze w życie nie ma graczy w dosłownym tego słowa znaczeniu. 
-Udział człowieka sprowadza się jedynie do ustalenia stanu początkowego komórek. 
+W zamyśle bot składa się z 4 modułów:
+ - moduł zarządzający całością pracy bota
+ - moduł parsujący "ekran", czyli przetwarzający aktualny stan rozgrywki do typów danych, które można poddać działaniu algorytmu
+ - moduł właściwego algorytmu, który otrzymuje dane o stanie rozgrywki i podejmuje decyzje o działaniach bota
+ - moduł egzekwujący decyzje wydane przez poprzedni moduł
 
-<b>Reguły gry według Conwaya</b>
+Ostatnie 3 moduły komunikują się jedynie z pierwszym modułem kontrolującym.
+Moim zadaniem było zaimplementowanie trzeciego modułu. Potrzebne do tego było jeszcze zdefiniowanie zestawu klas obiektów gry,
+którymi algorytm może się posługiwać.
+Potrzebne również było zaimitowanie modułu drugiego, by dostarczyć do algorytmu danych testowych. Losowe wygenerowanie sensownych
+danych nie było całkowicie trywialne, więc klasa "parsera ekranu" posiada też kilkanaście składowych. Implementacja modułu
+kontrolującego i modułu wykonującego decyzje nie była konieczna.
+Komponenty bota oraz jego diagram komunikacji pomiędzy modułami znajduje się na poniższych grafikach.
+ 
+<b>Komponenty bota</b>
 
-    Martwa komórka, która ma dokładnie 3 żywych sąsiadów, staje się żywa 
-    w następnej jednostce czasu (rodzi się).
-    Żywa komórka z 2 albo 3 żywymi sąsiadami pozostaje nadal żywa; 
-    przy innej liczbie sąsiadów umiera (z „samotności” albo „zatłoczenia”).
-    
+@image html bot_components.png
 
-<b>Algorytmy programu</b>
+<b>Diagram komunikacji</b>
 
-@image html main_alg.png
+@image html sequence_diagram.png
 
-<b>Opcje programu</b>
 
-	F1  Wyjdź z programu
-	F2  Wyświetl menu opcji użytkownika 
-		 - Ustaw żywe komórki na planszy
-		 - Ustaw maksymalną liczbę iteracji
-		 - Ustaw opóźnienie pomiędzy iteracjami
-		 - Ustaw rozmiary planszy 
-		 - Wylosuj stan planszy
-	F3  Zatrzymaj grę
-	F4  Strórz nową planszę
-	F9  Rozpocznij grę	 
+<b>Algorytm podejmowania decyzji</b>
 
-<b>Analiza pliku wejściowego</b>
+Najpierw podejmowane są decyzje o działaniu bohatera, następnie zamku
 
-Do analizy pliku wejściowego typu JSON została użyta biblioteka YAJL.
+@image html hero_actions.png
 
-Oto przykład poprawnego pliku parametrów typu JSON 
+@image html castle_actions.png
 
-@image html json_example.png
+Dalsza rozbudowa programu na przykład dopisanie modułu pobierania stanu gry z ekranu nie wymagałaby zmiany interfejsu modułu
+algorytmu; struktura GameState przechowuje informacje o wszystkich obiektach gry, więc nie byłaby konieczna jej modyfikacja.
+Dopisanie modułu wykonawcy decyzji również; decyzje są rozróżnialne, bo do kontenera ActionScenario dodawane są wskaźniki 
+na różne klasy pochodne klasy Action i każda przechowuje w sobie informację o obiekcie, na którym wykonana ma być akcja.
+Napisanie interfejsu graficznego mogłoby polegać na wyświetleniu siatki planszy i zaznaczenie na niej istniejących obiektów gry 
+wraz z możliwością ich modyfikacji (przy użyciu zwykłych setterów). Akcje bohatera mogłyby być na tej siatce zaznaczane i w ten
+sposób użytkownik widziałby jakie decyzje podjął algorytm.
 
 */

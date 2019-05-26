@@ -1,38 +1,30 @@
 \begin{DoxyAuthor}{Autor}
 Bartłomiej Olber
 \end{DoxyAuthor}
-Gra w życie (Life, The game of life) – jeden z pierwszych i najbardziej znanych przykładów automatu komórkowego, wymyślony w roku 1970 przez brytyjskiego matematyka Johna Conwaya.
+W zamyśle bot składa się z 4 modułów\+:
+\begin{DoxyItemize}
+\item moduł zarządzający całością pracy bota
+\item moduł parsujący \char`\"{}ekran\char`\"{}, czyli przetwarzający aktualny stan rozgrywki do typów danych, które można poddać działaniu algorytmu
+\item moduł właściwego algorytmu, który otrzymuje dane o stanie rozgrywki i podejmuje decyzje o działaniach bota
+\item moduł egzekwujący decyzje wydane przez poprzedni moduł
+\end{DoxyItemize}
 
-Gra toczy się na nieskończonej planszy (płaszczyźnie) podzielonej na kwadratowe komórki. Każda komórka ma ośmiu „sąsiadów” (tzw.\+sąsiedztwo Moore’a), czyli komórki przylegające do niej bokami i rogami. Każda komórka może znajdować się w jednym z dwóch stanów\+: może być albo „żywa” (wartość 1), albo „martwa” (wartość 0). Stany komórek zmieniają się w pewnych jednostkach czasu. Stan wszystkich komórek w pewnej jednostce czasu jest używany do obliczenia stanu wszystkich komórek w następnej jednostce. Po obliczeniu wszystkie komórki zmieniają swój stan dokładnie w tym samym momencie. Stan komórki zależy tylko od liczby jej żywych sąsiadów. W grze w życie nie ma graczy w dosłownym tego słowa znaczeniu. Udział człowieka sprowadza się jedynie do ustalenia stanu początkowego komórek.
+Ostatnie 3 moduły komunikują się jedynie z pierwszym modułem kontrolującym. Moim zadaniem było zaimplementowanie trzeciego modułu. Potrzebne do tego było jeszcze zdefiniowanie zestawu klas obiektów gry, którymi algorytm może się posługiwać. Potrzebne również było zaimitowanie modułu drugiego, by dostarczyć do algorytmu danych testowych. Losowe wygenerowanie sensownych danych nie było całkowicie trywialne, więc klasa \char`\"{}parsera ekranu\char`\"{} posiada też kilkanaście składowych. Implementacja modułu kontrolującego i modułu wykonującego decyzje nie była konieczna. Komponenty bota oraz jego diagram komunikacji pomiędzy modułami znajduje się na poniższych grafikach.
 
-{\bfseries Reguły gry według Conwaya} \begin{DoxyVerb}Martwa komórka, która ma dokładnie 3 żywych sąsiadów, staje się żywa 
-w następnej jednostce czasu (rodzi się).
-Żywa komórka z 2 albo 3 żywymi sąsiadami pozostaje nadal żywa; 
-przy innej liczbie sąsiadów umiera (z „samotności” albo „zatłoczenia”).
-\end{DoxyVerb}
-
-
-{\bfseries Algorytmy programu}
-
+{\bfseries Komponenty bota}
 
 
-{\bfseries Opcje programu} \begin{DoxyVerb}F1  Wyjdź z programu
-F2  Wyświetl menu opcji użytkownika 
-     - Ustaw żywe komórki na planszy
-     - Ustaw maksymalną liczbę iteracji
-     - Ustaw opóźnienie pomiędzy iteracjami
-     - Ustaw rozmiary planszy 
-     - Wylosuj stan planszy
-F3  Zatrzymaj grę
-F4  Strórz nową planszę
-F9  Rozpocznij grę   
-\end{DoxyVerb}
+
+{\bfseries Diagram komunikacji}
 
 
-{\bfseries Analiza pliku wejściowego}
 
-Do analizy pliku wejściowego typu J\+S\+ON została użyta biblioteka Y\+A\+JL.
+{\bfseries Algorytm podejmowania decyzji}
 
-Oto przykład poprawnego pliku parametrów typu J\+S\+ON
+Najpierw podejmowane są decyzje o działaniu bohatera, następnie zamku
 
- 
+
+
+
+
+Dalsza rozbudowa programu na przykład dopisanie modułu pobierania stanu gry z ekranu nie wymagałaby zmiany interfejsu modułu algorytmu; struktura Game\+State przechowuje informacje o wszystkich obiektach gry, więc nie byłaby konieczna jej modyfikacja. Dopisanie modułu wykonawcy decyzji również; decyzje są rozróżnialne, bo do kontenera Action\+Scenario dodawane są wskaźniki na różne klasy pochodne klasy Action i każda przechowuje w sobie informację o obiekcie, na którym wykonana ma być akcja. Napisanie interfejsu graficznego mogłoby polegać na wyświetleniu siatki planszy i zaznaczenie na niej istniejących obiektów gry wraz z możliwością ich modyfikacji (przy użyciu zwykłych setterów). Akcje bohatera mogłyby być na tej siatce zaznaczane i w ten sposób użytkownik widziałby jakie decyzje podjął algorytm. 

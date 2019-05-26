@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PROI projekt 3: Gra w życie</title>
+<title>PROI projekt 3: Algorytm podejmowania decyzji przez bota w grze</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,37 +59,35 @@ $(function() {
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Gra w życie </div>  </div>
+<div class="title">Algorytm podejmowania decyzji przez bota w grze </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Bartłomiej Olber</dd></dl>
-<p>Gra w życie (Life, The game of life) – jeden z pierwszych i najbardziej znanych przykładów automatu komórkowego, wymyślony w roku 1970 przez brytyjskiego matematyka Johna Conwaya.</p>
-<p>Gra toczy się na nieskończonej planszy (płaszczyźnie) podzielonej na kwadratowe komórki. Każda komórka ma ośmiu „sąsiadów” (tzw.sąsiedztwo Moore’a), czyli komórki przylegające do niej bokami i rogami. Każda komórka może znajdować się w jednym z dwóch stanów: może być albo „żywa” (wartość 1), albo „martwa” (wartość 0). Stany komórek zmieniają się w pewnych jednostkach czasu. Stan wszystkich komórek w pewnej jednostce czasu jest używany do obliczenia stanu wszystkich komórek w następnej jednostce. Po obliczeniu wszystkie komórki zmieniają swój stan dokładnie w tym samym momencie. Stan komórki zależy tylko od liczby jej żywych sąsiadów. W grze w życie nie ma graczy w dosłownym tego słowa znaczeniu. Udział człowieka sprowadza się jedynie do ustalenia stanu początkowego komórek.</p>
-<p><b>Reguły gry według Conwaya</b> </p><pre class="fragment">Martwa komórka, która ma dokładnie 3 żywych sąsiadów, staje się żywa 
-w następnej jednostce czasu (rodzi się).
-Żywa komórka z 2 albo 3 żywymi sąsiadami pozostaje nadal żywa; 
-przy innej liczbie sąsiadów umiera (z „samotności” albo „zatłoczenia”).
-</pre><p><b>Algorytmy programu</b></p>
+<p>W zamyśle bot składa się z 4 modułów:</p><ul>
+<li>moduł zarządzający całością pracy bota</li>
+<li>moduł parsujący "ekran", czyli przetwarzający aktualny stan rozgrywki do typów danych, które można poddać działaniu algorytmu</li>
+<li>moduł właściwego algorytmu, który otrzymuje dane o stanie rozgrywki i podejmuje decyzje o działaniach bota</li>
+<li>moduł egzekwujący decyzje wydane przez poprzedni moduł</li>
+</ul>
+<p>Ostatnie 3 moduły komunikują się jedynie z pierwszym modułem kontrolującym. Moim zadaniem było zaimplementowanie trzeciego modułu. Potrzebne do tego było jeszcze zdefiniowanie zestawu klas obiektów gry, którymi algorytm może się posługiwać. Potrzebne również było zaimitowanie modułu drugiego, by dostarczyć do algorytmu danych testowych. Losowe wygenerowanie sensownych danych nie było całkowicie trywialne, więc klasa "parsera ekranu" posiada też kilkanaście składowych. Implementacja modułu kontrolującego i modułu wykonującego decyzje nie była konieczna. Komponenty bota oraz jego diagram komunikacji pomiędzy modułami znajduje się na poniższych grafikach.</p>
+<p><b>Komponenty bota</b></p>
 <div class="image">
-<img src="main_alg.png" alt="main_alg.png"/>
+<img src="bot_components.png" alt="bot_components.png"/>
 </div>
-<p><b>Opcje programu</b> </p><pre class="fragment">F1  Wyjdź z programu
-F2  Wyświetl menu opcji użytkownika 
-     - Ustaw żywe komórki na planszy
-     - Ustaw maksymalną liczbę iteracji
-     - Ustaw opóźnienie pomiędzy iteracjami
-     - Ustaw rozmiary planszy 
-     - Wylosuj stan planszy
-F3  Zatrzymaj grę
-F4  Strórz nową planszę
-F9  Rozpocznij grę   
-</pre><p><b>Analiza pliku wejściowego</b></p>
-<p>Do analizy pliku wejściowego typu JSON została użyta biblioteka YAJL.</p>
-<p>Oto przykład poprawnego pliku parametrów typu JSON</p>
+<p><b>Diagram komunikacji</b></p>
 <div class="image">
-<img src="json_example.png" alt="json_example.png"/>
+<img src="sequence_diagram.png" alt="sequence_diagram.png"/>
 </div>
- </div></div><!-- contents -->
+<p><b>Algorytm podejmowania decyzji</b></p>
+<p>Najpierw podejmowane są decyzje o działaniu bohatera, następnie zamku</p>
+<div class="image">
+<img src="hero_actions.png" alt="hero_actions.png"/>
+</div>
+<div class="image">
+<img src="castle_actions.png" alt="castle_actions.png"/>
+</div>
+<p>Dalsza rozbudowa programu na przykład dopisanie modułu pobierania stanu gry z ekranu nie wymagałaby zmiany interfejsu modułu algorytmu; struktura GameState przechowuje informacje o wszystkich obiektach gry, więc nie byłaby konieczna jej modyfikacja. Dopisanie modułu wykonawcy decyzji również; decyzje są rozróżnialne, bo do kontenera ActionScenario dodawane są wskaźniki na różne klasy pochodne klasy Action i każda przechowuje w sobie informację o obiekcie, na którym wykonana ma być akcja. Napisanie interfejsu graficznego mogłoby polegać na wyświetleniu siatki planszy i zaznaczenie na niej istniejących obiektów gry wraz z możliwością ich modyfikacji (przy użyciu zwykłych setterów). Akcje bohatera mogłyby być na tej siatce zaznaczane i w ten sposób użytkownik widziałby jakie decyzje podjął algorytm. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">

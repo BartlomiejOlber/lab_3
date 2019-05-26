@@ -44,30 +44,30 @@ void Brain::make_castle_actions_( model::ActionScenario& action_scenario )
 				game_state_.my_castle.get_high_tier_recruitment_num());
 			action_scenario.push_back( std::unique_ptr<model::RecruitHighTierAction>( new model::RecruitHighTierAction(game_state_.my_castle )));
 			game_state_.my_castle.recruit_high_tier( available_to_buy );
-			gold_available -= available_to_buy * model::Castle::HIGH_TIER_BUILDING_COST;
+			gold_available -= available_to_buy * model::Castle::HIGH_TIER_ENTITY_COST;
 			if( gold_available > model::Castle::MID_TIER_ENTITY_COST ){
 				available_to_buy = count_available_to_buy_( gold_available, model::Castle::MID_TIER_ENTITY_COST,
 					game_state_.my_castle.get_mid_tier_recruitment_num());
 				action_scenario.push_back( std::unique_ptr<model::RecruitMidTierAction>( new model::RecruitMidTierAction(game_state_.my_castle )));
 				game_state_.my_castle.recruit_mid_tier( available_to_buy );
-				gold_available -= available_to_buy * model::Castle::MID_TIER_BUILDING_COST;
+				gold_available -= available_to_buy * model::Castle::MID_TIER_ENTITY_COST;
 				if( gold_available > model::Castle::LOW_TIER_ENTITY_COST ){
 					available_to_buy = count_available_to_buy_( gold_available, model::Castle::LOW_TIER_ENTITY_COST,
 						game_state_.my_castle.get_low_tier_recruitment_num());
 					action_scenario.push_back( std::unique_ptr<model::RecruitLowTierAction>( new model::RecruitLowTierAction(game_state_.my_castle )));
 					game_state_.my_castle.recruit_low_tier( available_to_buy );
-					gold_available -= available_to_buy * model::Castle::LOW_TIER_BUILDING_COST;
+					gold_available -= available_to_buy * model::Castle::LOW_TIER_ENTITY_COST;
 					/*
 					 * po wykupieniu wszystkich jednostek sprawdzamy czy stać nas jeszcze na wybudowanie budynku
 					 * tak jak w poprzednim przypadku sprawdzamy od poziomu wysokiego do niskiego
 					 */
-					if( gold_available > model::Castle::HIGH_TIER_BUILDING_COST ){
+					if( gold_available > model::Castle::HIGH_TIER_BUILDING_COST && game_state_.my_castle.is_development_available_high() ){
 						gold_available -= model::Castle::HIGH_TIER_BUILDING_COST;
 						action_scenario.push_back( std::unique_ptr<model::BuildHighTierAction>( new model::BuildHighTierAction(game_state_.my_castle )));
-					}else if( gold_available > model::Castle::MID_TIER_BUILDING_COST ){
+					}else if( gold_available > model::Castle::MID_TIER_BUILDING_COST && game_state_.my_castle.is_development_available_mid() ){
 						gold_available -= model::Castle::MID_TIER_BUILDING_COST;
 						action_scenario.push_back( std::unique_ptr<model::BuildMidTierAction>( new model::BuildMidTierAction(game_state_.my_castle )) );
-					}else if( gold_available > model::Castle::LOW_TIER_BUILDING_COST ){
+					}else if( gold_available > model::Castle::LOW_TIER_BUILDING_COST && game_state_.my_castle.is_development_available_low()){
 						gold_available -= model::Castle::LOW_TIER_BUILDING_COST;
 						action_scenario.push_back( std::unique_ptr<model::BuildLowTierAction>( new model::BuildLowTierAction(game_state_.my_castle )));
 					}
@@ -81,17 +81,17 @@ void Brain::make_castle_actions_( model::ActionScenario& action_scenario )
 				game_state_.my_castle.get_mid_tier_recruitment_num());
 			action_scenario.push_back( std::unique_ptr<model::RecruitMidTierAction>( new model::RecruitMidTierAction(game_state_.my_castle )));
 			game_state_.my_castle.recruit_mid_tier( available_to_buy );
-			gold_available -= available_to_buy * model::Castle::MID_TIER_BUILDING_COST;
+			gold_available -= available_to_buy * model::Castle::MID_TIER_ENTITY_COST;
 		}
 		/*
 		 * jeśli bohater przeciwnika jest daleko od zamku to sprawdzamy i jeśli jest możliwe rozbudujemy miasto od
 		 * wysokiego poziomu budynków do niskiego
 		 */
-	}else if( gold_available > model::Castle::HIGH_TIER_BUILDING_COST ){
+	}else if( gold_available > model::Castle::HIGH_TIER_BUILDING_COST && game_state_.my_castle.is_development_available_high()){
 		action_scenario.push_back( std::unique_ptr<model::BuildHighTierAction>( new model::BuildHighTierAction(game_state_.my_castle )));
-	}else if( gold_available > model::Castle::MID_TIER_BUILDING_COST ){
+	}else if( gold_available > model::Castle::MID_TIER_BUILDING_COST && game_state_.my_castle.is_development_available_mid()){
 		action_scenario.push_back( std::unique_ptr<model::BuildMidTierAction>( new model::BuildMidTierAction(game_state_.my_castle )));
-	}else if( gold_available > model::Castle::LOW_TIER_BUILDING_COST ){
+	}else if( gold_available > model::Castle::LOW_TIER_BUILDING_COST && game_state_.my_castle.is_development_available_low() ){
 		action_scenario.push_back( std::unique_ptr<model::BuildLowTierAction>( new model::BuildLowTierAction(game_state_.my_castle )));
 	}
 }

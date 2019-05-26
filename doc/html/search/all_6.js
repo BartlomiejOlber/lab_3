@@ -31,6 +31,5 @@ var searchData=
   ['guarded_5fbuilding_2ehpp',['guarded_building.hpp',['../guarded__building_8hpp.html',1,'']]],
   ['guarded_5fbuildings',['guarded_buildings',['../structmodel_1_1GameState.html#a065ec91ab324eaf7e3a1bca69bb9fe68',1,'model::GameState']]],
   ['guardedbuilding',['GuardedBuilding',['../classmodel_1_1GuardedBuilding.html',1,'model::GuardedBuilding'],['../classmodel_1_1GuardedBuilding.html#acd7faa9dc9d87371b33030b6f0223339',1,'model::GuardedBuilding::GuardedBuilding(Tier building_tier, Status status, int guards_num, Tier guards_tier, int x, int y)'],['../classmodel_1_1GuardedBuilding.html#aaf02e02d038198a6cb406505a07ff122',1,'model::GuardedBuilding::GuardedBuilding(int building_tier=0, int status=0, int guards_num=0, int guards_tier=0, int x=0, int y=0)']]],
-  ['guardedbuildingcontainer',['GuardedBuildingContainer',['../guarded__building_8hpp.html#a4c05c1c79b1b5f3bbb54b04c990d53ce',1,'model']]],
-  ['gra_20w_20życie',['Gra w życie',['../index.html',1,'']]]
+  ['guardedbuildingcontainer',['GuardedBuildingContainer',['../guarded__building_8hpp.html#a4c05c1c79b1b5f3bbb54b04c990d53ce',1,'model']]]
 ];
